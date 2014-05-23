@@ -39,7 +39,7 @@ namespace API.GGP.GeneralGamePlayingNS.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Program Files (x86)\\Microsoft Visual Studio 10.0\\Common7\\IDE\\WcfSvcHost.exe")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Program Files (x86)\\Microsoft Visual Studio 11.0\\Common7\\IDE\\WcfSvcHost.exe")]
         public string WcfSvcHostExecutable {
             get {
                 return ((string)(this["WcfSvcHostExecutable"]));

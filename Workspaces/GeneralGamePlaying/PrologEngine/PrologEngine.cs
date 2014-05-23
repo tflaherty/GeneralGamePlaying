@@ -24,7 +24,7 @@ namespace API.SWIProlog.Engine
 
         private readonly List<Process> processesStarted = new List<Process>();
 
-        private string WcfSvcHostExePath = @"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\WcfSvcHost.exe";
+        private string WcfSvcHostExePath = @"C:\Program Files (x86)\Microsoft Visual Studio 11.0\Common7\IDE\WcfSvcHost.exe";
 
         public static void KillAllPrologEngineServicesRunning()
         {

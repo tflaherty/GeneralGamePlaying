@@ -9,40 +9,38 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:app.config" caret="732" fromTop="20" />
       <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:App.config" caret="0" fromTop="0" />
       <File id="77137C9A-446D-4AC1-B7BE-C058680746D0/f:App.config" caret="1564" fromTop="35" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/d:Properties/f:Settings.settings" caret="820" fromTop="11" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:app.config" caret="1775" fromTop="31" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:app.config" caret="3229" fromTop="31" />
       <File id="5A7B3547-2665-4AF6-80A9-4EB6F0E03274/f:App.config" caret="712" fromTop="8" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/d:Properties/f:Settings.Designer.cs" caret="462" fromTop="11" />
       <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:App.config" caret="1707" fromTop="28" />
       <File id="5A7B3547-2665-4AF6-80A9-4EB6F0E03274/f:SWIPrologService3.cs" caret="784" fromTop="20" />
       <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:SWIPrologService4.cs" caret="987" fromTop="19" />
-      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:GeneralGamePlayerBase.cs" caret="268" fromTop="10" />
-      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstGeneralGamePlayer.cs" caret="1361" fromTop="21" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.resx" caret="8780" fromTop="48" />
       <File id="9EAC087C-237B-47A7-930B-0106652E5CA8/f:KIFParserUngerParallel.cs" caret="16440" fromTop="35" />
       <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Utilities.cs" caret="1722" fromTop="45" />
       <File id="B8C632A6-4AA4-47BA-9030-BDA5809EFA5F/f:IGeneralGame.cs" caret="860" fromTop="23" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="10353" fromTop="43" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.Designer.cs" caret="455" fromTop="13" />
       <File id="7E127119-B6E4-49D6-8E17-80F9CCD19164/f:Clause.cs" caret="4397" fromTop="28" />
       <File id="E274C0D3-787F-4BA1-8CD9-F46DAEA2100E/f:Form1.cs" caret="336" fromTop="15" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="286" fromTop="11" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.Designer.cs" caret="461" fromTop="13" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:TypeDef.cs" caret="525" fromTop="28" />
-      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="3217" fromTop="29" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="13332" fromTop="20" />
       <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Extensions.cs" caret="508" fromTop="16" />
-      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="2773" fromTop="28" />
       <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:ISWIPrologService.cs" caret="132" fromTop="4" />
       <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:SWIPrologService.cs" caret="766" fromTop="20" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="12205" fromTop="22" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:GeneralGamePlayerBase.cs" caret="836" fromTop="24" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="460" fromTop="15" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstGeneralGamePlayer.cs" caret="423" fromTop="15" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="1974" fromTop="28" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Settings.cs" caret="0" fromTop="0" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/d:Properties/f:Settings.Designer.cs" caret="1819" fromTop="20" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="18651" fromTop="12" />
+      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="2773" fromTop="28" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="1453" fromTop="24" />
     </RecentFiles>
     <RecentEdits>
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="7074" fromTop="51" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="9552" fromTop="47" />
       <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:App.config" caret="1804" fromTop="29" />
       <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="4653" fromTop="19" />
       <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="5924" fromTop="46" />
@@ -71,6 +69,8 @@
       <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="14727" fromTop="43" />
       <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="14497" fromTop="39" />
       <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Extensions.cs" caret="90" fromTop="4" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="895" fromTop="26" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="3229" fromTop="19" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
