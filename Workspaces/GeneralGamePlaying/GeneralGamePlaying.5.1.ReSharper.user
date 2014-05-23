@@ -1,0 +1,1682 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">False</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:ISWIPrologService.cs" caret="919" fromTop="27" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:app.config" caret="732" fromTop="20" />
+      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:App.config" caret="0" fromTop="0" />
+      <File id="77137C9A-446D-4AC1-B7BE-C058680746D0/f:App.config" caret="1564" fromTop="35" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/d:Properties/f:Settings.settings" caret="820" fromTop="11" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:app.config" caret="1775" fromTop="31" />
+      <File id="5A7B3547-2665-4AF6-80A9-4EB6F0E03274/f:App.config" caret="712" fromTop="8" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/d:Properties/f:Settings.Designer.cs" caret="462" fromTop="11" />
+      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:App.config" caret="1707" fromTop="28" />
+      <File id="5A7B3547-2665-4AF6-80A9-4EB6F0E03274/f:SWIPrologService3.cs" caret="784" fromTop="20" />
+      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:SWIPrologService4.cs" caret="987" fromTop="19" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:GeneralGamePlayerBase.cs" caret="268" fromTop="10" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstGeneralGamePlayer.cs" caret="1361" fromTop="21" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.resx" caret="8780" fromTop="48" />
+      <File id="9EAC087C-237B-47A7-930B-0106652E5CA8/f:KIFParserUngerParallel.cs" caret="16440" fromTop="35" />
+      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:SWIPrologService.cs" caret="1454" fromTop="24" />
+      <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Utilities.cs" caret="1722" fromTop="45" />
+      <File id="B8C632A6-4AA4-47BA-9030-BDA5809EFA5F/f:IGeneralGame.cs" caret="860" fromTop="23" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="10353" fromTop="43" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.Designer.cs" caret="455" fromTop="13" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="11062" fromTop="55" />
+      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="1894" fromTop="41" />
+      <File id="7E127119-B6E4-49D6-8E17-80F9CCD19164/f:Clause.cs" caret="4397" fromTop="28" />
+      <File id="E274C0D3-787F-4BA1-8CD9-F46DAEA2100E/f:Form1.cs" caret="336" fromTop="15" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="286" fromTop="11" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.Designer.cs" caret="461" fromTop="13" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:TypeDef.cs" caret="525" fromTop="28" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="3217" fromTop="29" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="13332" fromTop="20" />
+      <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Extensions.cs" caret="424" fromTop="13" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="7074" fromTop="51" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="9552" fromTop="47" />
+      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:App.config" caret="1804" fromTop="29" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="4653" fromTop="19" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="5924" fromTop="46" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14512" fromTop="26" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14849" fromTop="37" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14641" fromTop="31" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="15273" fromTop="52" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="11858" fromTop="30" />
+      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:SWIPrologService4.cs" caret="1269" fromTop="28" />
+      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:SWIPrologService4.cs" caret="1433" fromTop="32" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="12312" fromTop="44" />
+      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:SWIPrologService.cs" caret="2560" fromTop="24" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="2611" fromTop="28" />
+      <File id="B8C632A6-4AA4-47BA-9030-BDA5809EFA5F/f:IGeneralGame.cs" caret="932" fromTop="30" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="2303" fromTop="24" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="28516" fromTop="24" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="24892" fromTop="10" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="13723" fromTop="32" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="25795" fromTop="22" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="19813" fromTop="40" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="1833" fromTop="19" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="8780" fromTop="19" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="25277" fromTop="26" />
+      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="3410" fromTop="28" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="286" fromTop="11" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="14727" fromTop="43" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="14497" fromTop="39" />
+      <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Extensions.cs" caret="90" fromTop="4" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>D:\Program Files (x86)\NUnit 2.6.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="interface" priority="2" />
+      <Item value="string" priority="156" />
+      <Item value="IEnumerable" priority="21" />
+      <Item value="int" priority="63" />
+      <Item value="using" priority="14" />
+      <Item value="String`0" priority="33" />
+      <Item value="System" priority="22" />
+      <Item value="MatchId" priority="3" />
+      <Item value="public" priority="140" />
+      <Item value="List" priority="44" />
+      <Item value="GeneralGameManager" priority="36" />
+      <Item value="GeneralGameManager`0" priority="1" />
+      <Item value="GameDescriptionFileName" priority="0" />
+      <Item value="gameDescriptionFileName" priority="1" />
+      <Item value="void" priority="23" />
+      <Item value="KIFSentence" priority="1" />
+      <Item value="class" priority="9" />
+      <Item value="IGeneralGame`0" priority="5" />
+      <Item value="GeneralGame" priority="2" />
+      <Item value="bool" priority="32" />
+      <Item value="TheGeneralGame" priority="35" />
+      <Item value="new" priority="218" />
+      <Item value="for" priority="14" />
+      <Item value="Players" priority="2" />
+      <Item value="List&lt;IGeneralGamePlayer&gt;" priority="0" />
+      <Item value="var" priority="167" />
+      <Item value="IGeneralGamePlayer`0" priority="0" />
+      <Item value="FirstGeneralGamePlayer`0" priority="3" />
+      <Item value="newPlayer" priority="3" />
+      <Item value="foreach" priority="73" />
+      <Item value="foo" priority="16" />
+      <Item value="Task`0" priority="9" />
+      <Item value="List&lt;Task&lt;string&gt;&gt;" priority="0" />
+      <Item value="tasks" priority="8" />
+      <Item value="newTask" priority="3" />
+      <Item value="try" priority="18" />
+      <Item value="catch" priority="1" />
+      <Item value="AggregateException`0" priority="0" />
+      <Item value="ex" priority="5" />
+      <Item value="if" priority="160" />
+      <Item value="task" priority="1" />
+      <Item value="n" priority="46" />
+      <Item value="static" priority="24" />
+      <Item value="enum" priority="2" />
+      <Item value="GGP" priority="4" />
+      <Item value="GeneralGameManagerConstants`0" priority="0" />
+      <Item value="return" priority="108" />
+      <Item value="false" priority="29" />
+      <Item value="true" priority="40" />
+      <Item value="StartClock" priority="4" />
+      <Item value="startClock" priority="1" />
+      <Item value="PlayClock" priority="2" />
+      <Item value="playClock" priority="0" />
+      <Item value="DateTime`0" priority="3" />
+      <Item value="UriHostNameType`0" priority="2" />
+      <Item value="id" priority="1" />
+      <Item value="role" priority="20" />
+      <Item value="gameDescription" priority="5" />
+      <Item value="this" priority="34" />
+      <Item value="_player" priority="0" />
+      <Item value="Threading" priority="1" />
+      <Item value="Thread`0" priority="2" />
+      <Item value="GeneralGame`0" priority="8" />
+      <Item value="roleCount" priority="6" />
+      <Item value="RoleString" priority="3" />
+      <Item value="tmpRoleString" priority="0" />
+      <Item value="while" priority="4" />
+      <Item value="Proposition" priority="0" />
+      <Item value="Move" priority="4" />
+      <Item value="Role" priority="16" />
+      <Item value="State" priority="10" />
+      <Item value="null" priority="43" />
+      <Item value="Move`0" priority="10" />
+      <Item value="roleString" priority="0" />
+      <Item value="TheMove" priority="3" />
+      <Item value="move" priority="7" />
+      <Item value="private" priority="29" />
+      <Item value="Role`0" priority="3" />
+      <Item value="TheRole" priority="2" />
+      <Item value="override" priority="7" />
+      <Item value="List&lt;Move&gt;" priority="3" />
+      <Item value="prevMoves" priority="1" />
+      <Item value="nextMoves" priority="8" />
+      <Item value="moves" priority="4" />
+      <Item value="workingString" priority="0" />
+      <Item value="next" priority="0" />
+      <Item value="player" priority="4" />
+      <Item value="Dictionary" priority="4" />
+      <Item value="Dictionary&lt;string,int?&gt;" priority="0" />
+      <Item value="roleTaskIds" priority="1" />
+      <Item value="previousMoves" priority="3" />
+      <Item value="RecordMoves`0" priority="0" />
+      <Item value="terminalMove" priority="2" />
+      <Item value="AllMoves" priority="2" />
+      <Item value="GeneralGamePlayer" priority="0" />
+      <Item value="API.GGP" priority="3" />
+      <Item value="Parsing" priority="4" />
+      <Item value="UtilitiesAndExtensions" priority="0" />
+      <Item value="API" priority="1" />
+      <Item value="TFTree" priority="2" />
+      <Item value="parser" priority="4" />
+      <Item value="KIFFilePath" priority="11" />
+      <Item value="out" priority="20" />
+      <Item value="GeneralGamePlaying" priority="6" />
+      <Item value="ParallelEnumerable`0" priority="0" />
+      <Item value="ConcurrentDictionary" priority="4" />
+      <Item value="RelationClassifications`0" priority="0" />
+      <Item value="HornClause`0" priority="24" />
+      <Item value="ConcurrentDictionary&lt;RelationClassifications,HornClause&gt;" priority="0" />
+      <Item value="hornClauses" priority="9" />
+      <Item value="protected" priority="21" />
+      <Item value="error" priority="5" />
+      <Item value="keyValuePair" priority="4" />
+      <Item value="Variable`0" priority="5" />
+      <Item value="Enum`0" priority="1" />
+      <Item value="typeof" priority="4" />
+      <Item value="GameDescriptionHornClauseClassificationsNames" priority="0" />
+      <Item value="Contains`1" priority="0" />
+      <Item value="hornClause" priority="15" />
+      <Item value="else" priority="58" />
+      <Item value="ClassifiedHornClauses" priority="7" />
+      <Item value="List&lt;HornClause&gt;" priority="0" />
+      <Item value="GameDescriptionHornClauseClassifications`0" priority="3" />
+      <Item value="ToList`1" priority="1" />
+      <Item value="node" priority="2" />
+      <Item value="Atom`0" priority="10" />
+      <Item value="OperationCanceledException`0" priority="1" />
+      <Item value="Engine`0" priority="5" />
+      <Item value="Engine" priority="8" />
+      <Item value="Prolog" priority="3" />
+      <Item value="DosIO`0" priority="0" />
+      <Item value="PrologEngine" priority="43" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="query" priority="2" />
+      <Item value="BaseTerm" priority="1" />
+      <Item value="initHornClause" priority="1" />
+      <Item value="ClauseNode" priority="1" />
+      <Item value="classificationType" priority="1" />
+      <Item value="switch" priority="2" />
+      <Item value="case" priority="8" />
+      <Item value="break" priority="12" />
+      <Item value="default" priority="2" />
+      <Item value="HornClause" priority="2" />
+      <Item value="Predicate" priority="6" />
+      <Item value="Body" priority="25" />
+      <Item value="Count`1" priority="14" />
+      <Item value="Head" priority="22" />
+      <Item value="ArgIterator`0" priority="1" />
+      <Item value="Atom" priority="6" />
+      <Item value="newHornClause" priority="5" />
+      <Item value="as" priority="21" />
+      <Item value="Predicate`0" priority="18" />
+      <Item value="is" priority="3" />
+      <Item value="headPredicate" priority="2" />
+      <Item value="Term`0" priority="7" />
+      <Item value="IsAFact`0" priority="0" />
+      <Item value="Init" priority="0" />
+      <Item value="Terminal" priority="3" />
+      <Item value="engine" priority="1" />
+      <Item value="txb_Query" priority="4" />
+      <Item value="txb_QueryResults" priority="5" />
+      <Item value="solution" priority="6" />
+      <Item value="Environment`0" priority="3" />
+      <Item value="dialog" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="kifFilePath" priority="11" />
+      <Item value="_minNumPlayers" priority="1" />
+      <Item value="_maxNumPlayers" priority="1" />
+      <Item value="e" priority="10" />
+      <Item value="KeyCode" priority="0" />
+      <Item value="Control" priority="0" />
+      <Item value="btn_SubmitQuery" priority="0" />
+      <Item value="btn_SubmitQuery_Click`0" priority="0" />
+      <Item value="Escape" priority="0" />
+      <Item value="Enter" priority="0" />
+      <Item value="MessageBox`0" priority="3" />
+      <Item value="owner" priority="0" />
+      <Item value="IWin32Window`0" priority="0" />
+      <Item value="List&lt;string&gt;" priority="5" />
+      <Item value="predefinedClauseCount" priority="0" />
+      <Item value="x" priority="0" />
+      <Item value="KIFParserUngerParallel`0" priority="3" />
+      <Item value="ParseFromKIFFile`0" priority="0" />
+      <Item value="description" priority="0" />
+      <Item value="GeneralGameManagerNS" priority="0" />
+      <Item value="GGP`0" priority="0" />
+      <Item value="Interfaces" priority="5" />
+      <Item value="PlayerManagerProtocolConstants`0" priority="5" />
+      <Item value="_MatchId" priority="2" />
+      <Item value="value" priority="8" />
+      <Item value="TheMatchId" priority="0" />
+      <Item value="nextMove" priority="11" />
+      <Item value="PlayAsync`0" priority="1" />
+      <Item value="FindLegals`0" priority="1" />
+      <Item value="allLegals" priority="3" />
+      <Item value="Rand" priority="0" />
+      <Item value="randVal" priority="1" />
+      <Item value="movesContainRoles" priority="0" />
+      <Item value="moveList" priority="9" />
+      <Item value="FindRoles`0" priority="1" />
+      <Item value="allRoles" priority="2" />
+      <Item value="TheState" priority="1" />
+      <Item value="state" priority="3" />
+      <Item value="ApplyMoves`0" priority="0" />
+      <Item value="TermNode" priority="0" />
+      <Item value="movesString" priority="3" />
+      <Item value="ArgumentOutOfRangeException`0" priority="0" />
+      <Item value="State`0" priority="1" />
+      <Item value="CurrentState" priority="2" />
+      <Item value="GameDescription" priority="0" />
+      <Item value="KIFString" priority="0" />
+      <Item value="nilMoveString" priority="0" />
+      <Item value="StringBuilder`0" priority="9" />
+      <Item value="sb" priority="50" />
+      <Item value="hornClauseList" priority="2" />
+      <Item value="Roles" priority="2" />
+      <Item value="roleHornClause" priority="0" />
+      <Item value="_Description" priority="1" />
+      <Item value="Description" priority="2" />
+      <Item value="Encoding`0" priority="0" />
+      <Item value="MemoryStream`0" priority="0" />
+      <Item value="byteArray" priority="0" />
+      <Item value="StringReader`0" priority="1" />
+      <Item value="theString" priority="0" />
+      <Item value="StreamReader`0" priority="0" />
+      <Item value="ParallelOptions" priority="0" />
+      <Item value="MaxDegreeOfParallelism" priority="0" />
+      <Item value="useParallelTasks" priority="0" />
+      <Item value="sentenceCount" priority="2" />
+      <Item value="GC`0" priority="2" />
+      <Item value="BackgroundWorker`0" priority="1" />
+      <Item value="Message`0" priority="0" />
+      <Item value="RuleCollection`0" priority="4" />
+      <Item value="legalMoveQuery" priority="1" />
+      <Item value="varValue" priority="0" />
+      <Item value="RuleCollection" priority="5" />
+      <Item value="ruleCollection" priority="1" />
+      <Item value="legalMoves" priority="3" />
+      <Item value="newMove" priority="3" />
+      <Item value="File`0" priority="9" />
+      <Item value="FileMode`0" priority="2" />
+      <Item value="Int32`0" priority="2" />
+      <Item value="ParseFromFilePath`0" priority="2" />
+      <Item value="Append" priority="0" />
+      <Item value="IParser`0" priority="0" />
+      <Item value="FormatException`0" priority="3" />
+      <Item value="throw" priority="11" />
+      <Item value="Exception`0" priority="0" />
+      <Item value="newEx" priority="0" />
+      <Item value="filePath" priority="3" />
+      <Item value="Sentences" priority="0" />
+      <Item value="KIFRuleCollection`0" priority="0" />
+      <Item value="TFStreamTokenizer" priority="0" />
+      <Item value="CreateNew" priority="1" />
+      <Item value="DebugConsole" priority="1" />
+      <Item value="_DebugConsole" priority="0" />
+      <Item value="Trace`0" priority="7" />
+      <Item value="DebugAndTraceHelper" priority="3" />
+      <Item value="DebugAndTraceHelper`0" priority="27" />
+      <Item value="_debugAndTraceHelper" priority="0" />
+      <Item value="DecoupledConsole`0" priority="3" />
+      <Item value="format" priority="0" />
+      <Item value="params" priority="0" />
+      <Item value="object" priority="6" />
+      <Item value="TraceListener`0" priority="3" />
+      <Item value="decoupledConsole" priority="5" />
+      <Item value="backgroundWorker" priority="1" />
+      <Item value="DecoupledConsoleTraceListener`0" priority="2" />
+      <Item value="message" priority="3" />
+      <Item value="_OutputToDecoupledConsole" priority="0" />
+      <Item value="decoupledConsoleTraceListener" priority="5" />
+      <Item value="DecoupledConsoleTraceListener" priority="1" />
+      <Item value="_DecoupledConsole" priority="1" />
+      <Item value="OutputToDecoupledConsole" priority="0" />
+      <Item value="Debug`0" priority="0" />
+      <Item value="readonly" priority="7" />
+      <Item value="ParseTreeNodeData`0" priority="0" />
+      <Item value="Dictionary&lt;string,TFTree&lt;ParseTreeNodeData&gt;&gt;" priority="0" />
+      <Item value="ConcurrentDictionary&lt;int,HornClause&gt;" priority="1" />
+      <Item value="kifString" priority="5" />
+      <Item value="hornClauseCache" priority="3" />
+      <Item value="parseTrees" priority="6" />
+      <Item value="ConcurrentDictionary&lt;string,ConcurrentDictionary&lt;int,TFTree&lt;ParseTreeNodeData&gt;&gt;&gt;" priority="0" />
+      <Item value="parseTreeCache" priority="2" />
+      <Item value="tmpParseTrees" priority="1" />
+      <Item value="GetHornClauses`0" priority="1" />
+      <Item value="kifDescription" priority="0" />
+      <Item value="cleanedUpMovesString" priority="4" />
+      <Item value="c" priority="2" />
+      <Item value="parenCount" priority="0" />
+      <Item value="parenNextLevel" priority="1" />
+      <Item value="pos" priority="8" />
+      <Item value="tmpString" priority="6" />
+      <Item value="char" priority="2" />
+      <Item value="parenNestLevel" priority="1" />
+      <Item value="moveStartPos" priority="9" />
+      <Item value="prefixSeparator" priority="0" />
+      <Item value="s" priority="3" />
+      <Item value="postfixOperator" priority="0" />
+      <Item value="previousMovesAsString" priority="0" />
+      <Item value="newMoveString" priority="5" />
+      <Item value="nextState" priority="3" />
+      <Item value="ExecutionEngineException`0" priority="1" />
+      <Item value="theEngine" priority="2" />
+      <Item value="IFormatProvider`0" priority="0" />
+      <Item value="usesPredicateStart" priority="0" />
+      <Item value="outputString" priority="1" />
+      <Item value="AutoResetEvent`0" priority="1" />
+      <Item value="StartNextMoveEvent" priority="2" />
+      <Item value="AutoResetEvent" priority="1" />
+      <Item value="startNextTurnEvent" priority="2" />
+      <Item value="playerToolStripMenuItem" priority="2" />
+      <Item value="ToolStripMenuItem`0" priority="2" />
+      <Item value="playToolStripMenuItem" priority="1" />
+      <Item value="mi" priority="0" />
+      <Item value="submi" priority="0" />
+      <Item value="EventHandler`0" priority="0" />
+      <Item value="openParenCount" priority="0" />
+      <Item value="closedParenCount" priority="0" />
+      <Item value="freeRunningToolStripMenuItem" priority="1" />
+      <Item value="generalGamePlayer" priority="1" />
+      <Item value="tsb_NextTurn" priority="2" />
+      <Item value="Application`0" priority="5" />
+      <Item value="saveCollapsedParseTreesToolStripMenuItem" priority="1" />
+      <Item value="saveParseTreesToolStripMenuItem" priority="1" />
+      <Item value="KIFParserUngerParallel" priority="0" />
+      <Item value="NotImplementedException`0" priority="4" />
+      <Item value="NotImplementedException" priority="3" />
+      <Item value="saveHornClausesToolStripMenuItem" priority="0" />
+      <Item value="queryGamePrologEngineToolStripMenuItem" priority="0" />
+      <Item value="dumpPrologEngineUserClausesToolStripMenuItem" priority="0" />
+      <Item value="KIFParser" priority="2" />
+      <Item value="StringFormat`0" priority="0" />
+      <Item value="OpenFileDialog`0" priority="0" />
+      <Item value="ofd" priority="5" />
+      <Item value="dlgResult" priority="1" />
+      <Item value="DialogResult" priority="1" />
+      <Item value="SaveFileDialog`0" priority="0" />
+      <Item value="sfd" priority="1" />
+      <Item value="Path`0" priority="25" />
+      <Item value="FileName" priority="1" />
+      <Item value="RestoreDirectory" priority="0" />
+      <Item value="InitialDirectory" priority="0" />
+      <Item value="baseName" priority="2" />
+      <Item value="numChildrenToSkip" priority="2" />
+      <Item value="predicate" priority="1" />
+      <Item value="i" priority="31" />
+      <Item value="CompoundTerm`0" priority="1" />
+      <Item value="PredicateTable" priority="0" />
+      <Item value="nextClauses" priority="0" />
+      <Item value="nextClause" priority="0" />
+      <Item value="nextSolutions" priority="6" />
+      <Item value="nextSolution" priority="4" />
+      <Item value="continue" priority="0" />
+      <Item value="preventAnyChangesToPrologClauses" priority="1" />
+      <Item value="dns" priority="2" />
+      <Item value="IEnumerator" priority="1" />
+      <Item value="Dictionary&lt;string,TraceListener&gt;" priority="0" />
+      <Item value="listener" priority="4" />
+      <Item value="List&lt;TraceListener&gt;" priority="1" />
+      <Item value="listeners" priority="5" />
+      <Item value="AddListener`0" priority="1" />
+      <Item value="channelId" priority="6" />
+      <Item value="RemoveListener`0" priority="0" />
+      <Item value="defaultChannelId" priority="4" />
+      <Item value="traceListener" priority="4" />
+      <Item value="LogFileLocation`0" priority="5" />
+      <Item value="TheLogFileLocation" priority="1" />
+      <Item value="Custom" priority="0" />
+      <Item value="Exception" priority="1" />
+      <Item value="TextWriterTraceListener`0" priority="1" />
+      <Item value="fileName" priority="3" />
+      <Item value="CustomLocation" priority="0" />
+      <Item value="BaseFileName" priority="0" />
+      <Item value="newListener" priority="2" />
+      <Item value="roles" priority="5" />
+      <Item value="_Role" priority="0" />
+      <Item value="decoupledConsoleListener" priority="1" />
+      <Item value="TraceOptions`0" priority="0" />
+      <Item value="FlushAfterEachOutput" priority="1" />
+      <Item value="ConcurrentBag" priority="1" />
+      <Item value="listenersForThisChannel" priority="1" />
+      <Item value="Guid`0" priority="7" />
+      <Item value="Guid" priority="0" />
+      <Item value="lock" priority="5" />
+      <Item value="clauseDump" priority="1" />
+      <Item value="SessionMode`0" priority="1" />
+      <Item value="NetTcpBinding`0" priority="3" />
+      <Item value="Type`0" priority="0" />
+      <Item value="host" priority="10" />
+      <Item value="ServiceHost" priority="8" />
+      <Item value="serviceType" priority="0" />
+      <Item value="SbsSW" priority="2" />
+      <Item value="PlMtEngine" priority="1" />
+      <Item value="PlMtEngine`0" priority="0" />
+      <Item value="SwiPlCs" priority="1" />
+      <Item value="PlQuery`0" priority="1" />
+      <Item value="PlQuery" priority="0" />
+      <Item value="query1" priority="0" />
+      <Item value="PlEngine`0" priority="5" />
+      <Item value="OperationContract" priority="5" />
+      <Item value="ServiceReference1" priority="8" />
+      <Item value="IPrologService`0" priority="1" />
+      <Item value="PrologServiceClient`0" priority="1" />
+      <Item value="iPrologService" priority="0" />
+      <Item value="OperationContext`0" priority="0" />
+      <Item value="SWIPrologService`0" priority="4" />
+      <Item value="q" priority="4" />
+      <Item value="PlTermV`0" priority="2" />
+      <Item value="PlQueryVariables`0" priority="4" />
+      <Item value="clause" priority="14" />
+      <Item value="plQueryVariablese" priority="4" />
+      <Item value="yield break" priority="0" />
+      <Item value="yield return" priority="0" />
+      <Item value="list" priority="4" />
+      <Item value="plQueryVariable" priority="7" />
+      <Item value="ISWIPrologService`0" priority="13" />
+      <Item value="SWIPrologServiceClient`0" priority="8" />
+      <Item value="DataGridCell`0" priority="0" />
+      <Item value="Console`0" priority="5" />
+      <Item value="ServiceHost`0" priority="3" />
+      <Item value="DataContract" priority="0" />
+      <Item value="DataMember" priority="1" />
+      <Item value="SolutionVariable`0" priority="3" />
+      <Item value="outerList" priority="1" />
+      <Item value="innerList" priority="3" />
+      <Item value="SolutionVariable" priority="2" />
+      <Item value="Variable" priority="1" />
+      <Item value="variableName" priority="2" />
+      <Item value="Value" priority="0" />
+      <Item value="Progress" priority="0" />
+      <Item value="PrologEngine`0" priority="1" />
+      <Item value="swiPrologServiceClient" priority="8" />
+      <Item value="IDisposable`0" priority="4" />
+      <Item value="SWIPrologServiceTest" priority="1" />
+      <Item value="prologEngineCount" priority="3" />
+      <Item value="engineIndex" priority="1" />
+      <Item value="NotFiniteNumberException" priority="0" />
+      <Item value="ServiceReference2" priority="0" />
+      <Item value="SWIPrologServiceLibrary" priority="7" />
+      <Item value="ServiceModel" priority="0" />
+      <Item value="EndpointAddress`0" priority="0" />
+      <Item value="ChannelFactory`0" priority="0" />
+      <Item value="myBinding" priority="3" />
+      <Item value="myEndpoint" priority="0" />
+      <Item value="ClientBase" priority="0" />
+      <Item value="myChannelFactory" priority="0" />
+      <Item value="SecurityMode`0" priority="0" />
+      <Item value="solutionVariables" priority="8" />
+      <Item value="solutionVariable" priority="5" />
+      <Item value="myLock" priority="0" />
+      <Item value="GetSolutionVariables`0" priority="1" />
+      <Item value="StringBuilder" priority="1" />
+      <Item value="tmp" priority="9" />
+      <Item value="firstArgument" priority="2" />
+      <Item value="functorToRemove" priority="0" />
+      <Item value="alpha" priority="0" />
+      <Item value="solutions" priority="0" />
+      <Item value="gameHasTerminated" priority="5" />
+      <Item value="newArguments" priority="12" />
+      <Item value="term" priority="1" />
+      <Item value="Concat`1" priority="0" />
+      <Item value="argumentIndex" priority="0" />
+      <Item value="origArgumentIndex" priority="0" />
+      <Item value="terminalCount" priority="2" />
+      <Item value="Constant`0" priority="0" />
+      <Item value="Number`0" priority="1" />
+      <Item value="newTerminalHornClause" priority="1" />
+      <Item value="terminalFunctor" priority="0" />
+      <Item value="Term" priority="2" />
+      <Item value="FindTerminal`0" priority="0" />
+      <Item value="satisfiedTerminalRules" priority="3" />
+      <Item value="terminalHornClauses" priority="0" />
+      <Item value="terminalClause" priority="1" />
+      <Item value="satisfiedTerminalRulesList" priority="2" />
+      <Item value="satisfiedTerminalClauses" priority="3" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="newBody" priority="2" />
+      <Item value="functor" priority="0" />
+      <Item value="Arguments" priority="14" />
+      <Item value="Functor" priority="8" />
+      <Item value="virtual" priority="0" />
+      <Item value="abstract" priority="1" />
+      <Item value="TheString" priority="2" />
+      <Item value="IEnumerable`0" priority="0" />
+      <Item value="retractAll" priority="1" />
+      <Item value="prefix" priority="0" />
+      <Item value="Func&lt;SolutionVariable,bool&gt;" priority="0" />
+      <Item value="namespace" priority="1" />
+      <Item value="head" priority="0" />
+      <Item value="body" priority="0" />
+      <Item value="file" priority="0" />
+      <Item value="TextWriter`0" priority="1" />
+      <Item value="StreamWriter`0" priority="0" />
+      <Item value="Func" priority="1" />
+      <Item value="allPredicates" priority="2" />
+      <Item value="operator" priority="0" />
+      <Item value="lhs" priority="0" />
+      <Item value="rhs" priority="0" />
+      <Item value="functorToBeReplaced" priority="4" />
+      <Item value="functorToReplaceWith" priority="3" />
+      <Item value="newHead" priority="0" />
+      <Item value="newFunctor" priority="1" />
+      <Item value="Functor`0" priority="0" />
+      <Item value="modifiedHornClauses" priority="1" />
+      <Item value="arguments" priority="0" />
+      <Item value="GetLength`0" priority="0" />
+      <Item value="modifiedArgumentCount" priority="2" />
+      <Item value="pred" priority="2" />
+      <Item value="startingArgumentOffset" priority="0" />
+      <Item value="Serializable" priority="3" />
+      <Item value="formatter" priority="0" />
+      <Item value="clauses" priority="1" />
+      <Item value="binFilePath" priority="2" />
+      <Item value="sortAlphabetically" priority="2" />
+      <Item value="MdiChildren" priority="0" />
+      <Item value="Form`0" priority="1" />
+      <Item value="MdiParent" priority="1" />
+      <Item value="TextBox`0" priority="0" />
+      <Item value="Dock" priority="3" />
+      <Item value="DockStyle`0" priority="1" />
+      <Item value="playerOutputForm" priority="4" />
+      <Item value="TextboxTraceListener`0" priority="0" />
+      <Item value="playerOutputTextBox" priority="1" />
+      <Item value="Multiline" priority="0" />
+      <Item value="Text" priority="1" />
+      <Item value="ScrollBars" priority="0" />
+      <Item value="ScrollBars`0" priority="0" />
+      <Item value="Margin" priority="0" />
+      <Item value="Padding" priority="1" />
+      <Item value="AutoScrollOffset" priority="0" />
+      <Item value="textBox" priority="2" />
+      <Item value="Location" priority="0" />
+      <Item value="Point" priority="1" />
+      <Item value="prevPlayerOutputWindowX" priority="0" />
+      <Item value="playerOutputWindowX" priority="1" />
+      <Item value="StartPosition" priority="0" />
+      <Item value="Manual" priority="0" />
+      <Item value="ChannelId" priority="0" />
+      <Item value="Bounds" priority="0" />
+      <Item value="Width" priority="1" />
+      <Item value="playerOutputFormWidth" priority="0" />
+      <Item value="managerOutputForm" priority="7" />
+      <Item value="Height" priority="0" />
+      <Item value="openFileDialog" priority="3" />
+      <Item value="WindowsFormsSection`0" priority="0" />
+      <Item value="Screen`0" priority="2" />
+      <Item value="SystemInformation`0" priority="0" />
+      <Item value="StatusStripTraceListener`0" priority="0" />
+      <Item value="ToolStripStatusLabel`0" priority="0" />
+      <Item value="StatusStrip`0" priority="0" />
+      <Item value="statusStrip" priority="0" />
+      <Item value="toolStripStatusLabel" priority="1" />
+      <Item value="method" priority="0" />
+      <Item value="DefaultExt" priority="0" />
+      <Item value="FilterIndex" priority="0" />
+      <Item value="Timeout`0" priority="0" />
+      <Item value="Next" priority="0" />
+      <Item value="ListAllFacts`0" priority="0" />
+      <Item value="ExecuteClause`0" priority="0" />
+      <Item value="Consult`0" priority="0" />
+      <Item value="ApplicationException`0" priority="0" />
+      <Item value="xmlprotestPath" priority="0" />
+      <Item value="Tuple`0" priority="2" />
+      <Item value="predicateAndArity" priority="1" />
+      <Item value="output" priority="4" />
+      <Item value="predicatesAndArities" priority="1" />
+      <Item value="newPredicateAndArity" priority="1" />
+      <Item value="basePredicatesAndArities" priority="0" />
+      <Item value="styleSheetName" priority="1" />
+      <Item value="XMLStyleSheetFilePath" priority="3" />
+      <Item value="htmlOutputForm" priority="5" />
+      <Item value="Form" priority="0" />
+      <Item value="webBrowser" priority="4" />
+      <Item value="ScrollBarsEnabled" priority="0" />
+      <Item value="WebBrowser`0" priority="1" />
+      <Item value="IEWebBrowserListener`0" priority="0" />
+      <Item value="stateAsXML" priority="2" />
+      <Item value="ieWebBrowser" priority="2" />
+      <Item value="_xslFilePath" priority="2" />
+      <Item value="DataGridViewCellValidatingEventArgs`0" priority="0" />
+      <Item value="xslDocument" priority="4" />
+      <Item value="XslCompiledTransform" priority="0" />
+      <Item value="RunOnUiThread`0" priority="0" />
+      <Item value="DoTheWrite`0" priority="0" />
+      <Item value="htmlOutputFormListener" priority="1" />
+      <Item value="XmlReader`0" priority="0" />
+      <Item value="XmlTextReader`0" priority="0" />
+      <Item value="xmlReader" priority="0" />
+      <Item value="xslFilePath" priority="0" />
+      <Item value="MilliSecondsBetweenFreeRunningMoves" priority="2" />
+      <Item value="millisecondsTimeout" priority="0" />
+      <Item value="InputBox`0" priority="0" />
+      <Item value="input" priority="1" />
+      <Item value="InputBoxResultType`0" priority="0" />
+      <Item value="dialogResult" priority="1" />
+      <Item value="UInt32`0" priority="0" />
+      <Item value="ConfigSettings`0" priority="0" />
+      <Item value="GameStateWindowTagString" priority="0" />
+      <Item value="GameManagerWindowConfigStringPrefix" priority="0" />
+      <Item value="WindowXLocationConfigStringSuffix" priority="0" />
+      <Item value="gameManagerWindowX" priority="0" />
+      <Item value="gameManagerWindowY" priority="0" />
+      <Item value="gameManagerWindowWidth" priority="1" />
+      <Item value="gameManagerWindowHeight" priority="1" />
+      <Item value="WindowYLocationConfigStringSuffix" priority="0" />
+      <Item value="FormWindowState`0" priority="0" />
+      <Item value="Normal" priority="0" />
+      <Item value="AmbientProperties`0" priority="0" />
+      <Item value="gameManagerWindowState" priority="1" />
+      <Item value="WindowGeometryPersistence`0" priority="0" />
+      <Item value="form" priority="1" />
+      <Item value="Collections" priority="0" />
+      <Item value="Specialized" priority="0" />
+      <Item value="StringCollection`0" priority="0" />
+      <Item value="stringCollection" priority="7" />
+      <Item value="tagName" priority="4" />
+      <Item value="tagNameWithSep" priority="1" />
+      <Item value="index" priority="0" />
+      <Item value="GeometryFromString`0" priority="0" />
+      <Item value="length" priority="0" />
+      <Item value="GeometryToString`0" priority="0" />
+      <Item value="newString" priority="0" />
+      <Item value="includeTrailingPeriod" priority="0" />
+      <Item value="Uri`0" priority="6" />
+      <Item value="Uri" priority="1" />
+      <Item value="baseAddress1" priority="0" />
+      <Item value="baseAddresses" priority="1" />
+      <Item value="BorderStyle`0" priority="0" />
+      <Item value="endpoint" priority="2" />
+      <Item value="binding" priority="0" />
+      <Item value="tcpBinding" priority="7" />
+      <Item value="TimeSpan" priority="0" />
+      <Item value="None" priority="0" />
+      <Item value="ClientCredentials`0" priority="0" />
+      <Item value="MessageCredentialType" priority="0" />
+      <Item value="ProtectionLevel" priority="0" />
+      <Item value="TcpClientCredentialType" priority="0" />
+      <Item value="t" priority="2" />
+      <Item value="Thread" priority="0" />
+      <Item value="StartSWIPrologService1`0" priority="0" />
+      <Item value="StartWCFService1`0" priority="0" />
+      <Item value="Process`0" priority="3" />
+      <Item value="List&lt;Process&gt;" priority="0" />
+      <Item value="newProcess" priority="2" />
+      <Item value="processesStarted" priority="0" />
+      <Item value="process" priority="7" />
+      <Item value="ThreadPriorityLevel`0" priority="0" />
+      <Item value="MRUManager_dotNet4_example" priority="0" />
+      <Item value="mruManager" priority="1" />
+      <Item value="MRUManager" priority="0" />
+      <Item value="selectRecentGameFileToolStripMenuItem" priority="0" />
+      <Item value="openKIFFile`0" priority="0" />
+      <Item value="OpenKIFFile`0" priority="0" />
+      <Item value="AssemblyLoadEventArgs`0" priority="0" />
+      <Item value="obj" priority="0" />
+      <Item value="decimal" priority="1" />
+      <Item value="Score`0" priority="3" />
+      <Item value="score" priority="0" />
+      <Item value="TheScore" priority="0" />
+      <Item value="List&lt;Score&gt;" priority="0" />
+      <Item value="Scores" priority="1" />
+      <Item value="Score" priority="0" />
+      <Item value="Decimal`0" priority="0" />
+      <Item value="declaredDynamic" priority="1" />
+      <Item value="autoStartToolStripMenuItem" priority="0" />
+      <Item value="Play`0" priority="0" />
+      <Item value="startGameToolStripMenuItem_Click`0" priority="0" />
+      <Item value="List&lt;Functor&gt;" priority="0" />
+      <Item value="Tuple" priority="1" />
+      <Item value="List&lt;Tuple&lt;string,int&gt;&gt;" priority="0" />
+      <Item value="BaseAndNextFunctors" priority="2" />
+      <Item value="Tuple&lt;string,int&gt;" priority="0" />
+      <Item value="baseAndNextFunctor" priority="5" />
+      <Item value="numBaseAndNextFunctors" priority="1" />
+      <Item value="global" priority="0" />
+      <Item value="functorCount" priority="3" />
+      <Item value="functorCounter" priority="0" />
+      <Item value="tmpfoo" priority="0" />
+      <Item value="prologMoveListBuilder" priority="4" />
+      <Item value="currentState" priority="1" />
+      <Item value="currentStateSolutions" priority="0" />
+      <Item value="prologMoveList" priority="0" />
+      <Item value="UriFormat`0" priority="1" />
+      <Item value="UseOldWayOfGeneratingAndApplyingMoves" priority="4" />
+      <Item value="useOriginalMoveGenerationAndApplicationToolStripMenuItem" priority="2" />
+      <Item value="SeekOrigin`0" priority="0" />
+      <Item value="nextOldSolutions" priority="2" />
+      <Item value="StringDifferenceDialog" priority="2" />
+      <Item value="StringDifferenceDialog`0" priority="1" />
+      <Item value="nextOldSolutionsDistinct" priority="2" />
+      <Item value="nextSolutionsDistinct" priority="1" />
+      <Item value="sdd" priority="0" />
+      <Item value="oldway" priority="0" />
+      <Item value="newway" priority="1" />
+      <Item value="in" priority="0" />
+      <Item value="hornClauseAsString" priority="0" />
+      <Item value="counter" priority="0" />
+      <Item value="secondLParenIndex" priority="1" />
+      <Item value="indexOfRightBracket" priority="0" />
+      <Item value="Properties" priority="5" />
+      <Item value="Settings" priority="0" />
+      <Item value="Default" priority="0" />
+      <Item value="TempFilePath" priority="9" />
+      <Item value="IO" priority="10" />
+      <Item value="Settings`0" priority="4" />
+      <Item value="tempFilePath" priority="10" />
+      <Item value="wcfSvcHostExePath" priority="6" />
+      <Item value="_TempFilePath" priority="5" />
+      <Item value="WcfSvcHostExePath" priority="2" />
+      <Item value="GeneralGamePlayingNS" priority="0" />
+      <Item value="SWIProlog" priority="8" />
+      <Item value="GGPInterfaces" priority="0" />
+      <Item value="SWIProlog.Engine" priority="0" />
+      <Item value="GGPInterfacesNS" priority="0" />
+      <Item value="List&lt;TurnRecord&gt;" priority="0" />
+      <Item value="GameState`0" priority="0" />
+      <Item value="TurnRecord`0" priority="2" />
+      <Item value="thisTurnRecord" priority="14" />
+      <Item value="CurrentTurn" priority="1" />
+      <Item value="finally" priority="0" />
+      <Item value="TurnRecords" priority="9" />
+      <Item value="TurnRecord" priority="0" />
+      <Item value="List&lt;int&gt;" priority="0" />
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="NewsStyleUriParser`0" priority="0" />
+      <Item value="GameState" priority="0" />
+      <Item value="DebuggerTypeProxyAttribute`0" priority="0" />
+      <Item value="historyFileName" priority="2" />
+      <Item value="currentTurnIndex" priority="6" />
+      <Item value="initialTurnRecord" priority="0" />
+      <Item value="ieWebBrowserListener" priority="1" />
+      <Item value="MaskInputRejectedEventArgs`0" priority="0" />
+      <Item value="Math`0" priority="0" />
+      <Item value="gameFileName" priority="0" />
+      <Item value="PrevNextMoveEvent" priority="1" />
+      <Item value="prevTurnEvent" priority="1" />
+      <Item value="goForward" priority="9" />
+      <Item value="tsb_PrevTurn" priority="2" />
+      <Item value="InputFunctors" priority="2" />
+      <Item value="PlayerSpecificPrologFiles" priority="0" />
+      <Item value="darkChessPath" priority="0" />
+      <Item value="sortedLegalMoves" priority="1" />
+      <Item value="Space" priority="0" />
+      <Item value="tsb_NextTurn_Click`0" priority="0" />
+      <Item value="Back" priority="0" />
+      <Item value="swiPrologServiceClientTmp" priority="0" />
+      <Item value="needToStartService" priority="5" />
+      <Item value="KillAllPrologEngineServicesRunning`0" priority="0" />
+      <Item value="Object`0" priority="0" />
+      <Item value="legalMovesWithEval" priority="0" />
+      <Item value="maxEval" priority="4" />
+      <Item value="minEval" priority="0" />
+      <Item value="Reverse`1" priority="0" />
+      <Item value="codeBasePath" priority="3" />
+      <Item value="localCodeBasePath" priority="0" />
+      <Item value="alphaBetaPath" priority="1" />
+      <Item value="CurrentCultureIgnoreCase" priority="0" />
+      <Item value="AllowFastTurnsWithNoPlayerMoves" priority="1" />
+      <Item value="allowFastMovesToolStripMenuItem" priority="0" />
+      <Item value="AllowFreeRunningOfTurnsWithNoPlayerMoves" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GGP.GeneralGame">
+      <Item value="LoadAsyncDescription`0" priority="0" />
+      <Item value="MinNumPlayers" priority="0" />
+      <Item value="Description" priority="1" />
+      <Item value="GetRoles`0" priority="0" />
+      <Item value="IsInATerminalState" priority="0" />
+      <Item value="FindTerminal`0" priority="0" />
+      <Item value="FindRoles`0" priority="0" />
+      <Item value="GetTerminalMove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add`0" priority="31" />
+      <Item value="ToArray`0" priority="8" />
+      <Item value="Where`1" priority="15" />
+      <Item value="Select`2" priority="0" />
+      <Item value="Any`1" priority="4" />
+      <Item value="Count" priority="7" />
+      <Item value="Clear`0" priority="1" />
+      <Item value="Distinct`1" priority="5" />
+      <Item value="Remove`0" priority="1" />
+      <Item value="Contains`0" priority="2" />
+      <Item value="ToList`1" priority="0" />
+      <Item value="Concat`1" priority="0" />
+      <Item value="AddRange`0" priority="0" />
+      <Item value="OrderBy`2" priority="0" />
+      <Item value="Indexer" priority="0" />
+      <Item value="FirstOrDefault`1" priority="0" />
+      <Item value="Max`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GGP.IGeneralGamePlayer">
+      <Item value="InfoAsync`0" priority="0" />
+      <Item value="StartAsync`0" priority="0" />
+      <Item value="PlayAsync`0" priority="0" />
+      <Item value="Role" priority="2" />
+      <Item value="StopAsync`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Tasks.Task`1">
+      <Item value="Start`0" priority="0" />
+      <Item value="Result" priority="2" />
+      <Item value="AsyncState" priority="0" />
+      <Item value="Id" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Tasks.Task">
+      <Item value="WaitAll`0" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.AggregateException">
+      <Item value="Handle`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Any`1" priority="11" />
+      <Item value="ToArray`1" priority="2" />
+      <Item value="Aggregate`3" priority="0" />
+      <Item value="Select`2" priority="5" />
+      <Item value="ToList`1" priority="2" />
+      <Item value="First`1" priority="11" />
+      <Item value="Count`1" priority="6" />
+      <Item value="ElementAt`1" priority="1" />
+      <Item value="Where`1" priority="7" />
+      <Item value="Join`4" priority="0" />
+      <Item value="FirstOrDefault`1" priority="1" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="GetEnumerator`0" priority="2" />
+      <Item value="Contains`1" priority="0" />
+      <Item value="Max`2" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.DateTime">
+      <Item value="Now" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.DateTime">
+      <Item value="ToString`0" priority="0" />
+      <Item value="ToShortDateString`0" priority="0" />
+      <Item value="ToShortTimeString`0" priority="0" />
+      <Item value="ToLongTimeString`0" priority="0" />
+      <Item value="Millisecond" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GGP.GeneralGameManager">
+      <Item value="MatchId" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="Sleep`0" priority="1" />
+      <Item value="Yield`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GGP.Role">
+      <Item value="TheRole" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GGP.Move">
+      <Item value="ToString`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="Add`0" priority="2" />
+      <Item value="ContainsKey`0" priority="2" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Nullable`1">
+      <Item value="Value" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.Parsing.KIFParserUngerParallel">
+      <Item value="KIFFilePath" priority="0" />
+      <Item value="Parse`0" priority="0" />
+      <Item value="SaveCollapsedParseTrees`0" priority="2" />
+      <Item value="SaveParseTrees`0" priority="2" />
+      <Item value="GetHornClauses`0" priority="0" />
+      <Item value="ParseFromGameDescriptionString`0" priority="0" />
+      <Item value="ParseFromString`0" priority="3" />
+      <Item value="ParseFromDescriptionString`0" priority="1" />
+      <Item value="ParseFromFilePath`0" priority="0" />
+      <Item value="SaveHornClauses`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="19" />
+      <Item value="Format`0" priority="5" />
+      <Item value="Copy`0" priority="2" />
+      <Item value="Join`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Value" priority="12" />
+      <Item value="Key" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Enum">
+      <Item value="GetNames`0" priority="1" />
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.PredicateLogic.HornClause">
+      <Item value="Head" priority="33" />
+      <Item value="ToString`0" priority="5" />
+      <Item value="Body" priority="1" />
+      <Item value="RemoveFirstFunctor`0" priority="2" />
+      <Item value="ToPrologAssertString`0" priority="0" />
+      <Item value="RemoveTrueRelation`0" priority="0" />
+      <Item value="GetFunctorOfHeadsFirstArgument`0" priority="0" />
+      <Item value="InsertArgumentIntoHead`0" priority="1" />
+      <Item value="DeepCopy`0" priority="5" />
+      <Item value="ToPrologClause`0" priority="1" />
+      <Item value="ReplaceFunctor`0" priority="1" />
+      <Item value="ReplaceAllFunctorsUsedByProlog`0" priority="1" />
+      <Item value="RemoveFunctor`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.PredicateLogic.Predicate">
+      <Item value="Functor" priority="17" />
+      <Item value="Arguments" priority="28" />
+      <Item value="ToString`0" priority="2" />
+      <Item value="Arity" priority="10" />
+      <Item value="ReplaceFunctor`0" priority="2" />
+      <Item value="DeepCopy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.PredicateLogic.Atom">
+      <Item value="ToString`0" priority="9" />
+      <Item value="TheString" priority="8" />
+      <Item value="DeepCopy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="ToLower`0" priority="0" />
+      <Item value="Trim`0" priority="1" />
+      <Item value="First`1" priority="0" />
+      <Item value="StartsWith`0" priority="6" />
+      <Item value="EndsWith`0" priority="0" />
+      <Item value="Substring`0" priority="5" />
+      <Item value="Length" priority="6" />
+      <Item value="Join`4" priority="2" />
+      <Item value="Any`1" priority="2" />
+      <Item value="Where`1" priority="0" />
+      <Item value="Contains`0" priority="12" />
+      <Item value="Replace`0" priority="3" />
+      <Item value="ToString`0" priority="2" />
+      <Item value="CopyTo`0" priority="0" />
+      <Item value="ToCharArray`0" priority="0" />
+      <Item value="ToUpper`0" priority="3" />
+      <Item value="IndexOf`0" priority="1" />
+      <Item value="IndexOfNth`0" priority="0" />
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.Tree.TFTreeNode`1">
+      <Item value="Children" priority="2" />
+      <Item value="Data" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.Parsing.ParseTreeNodeData">
+      <Item value="Lexemes" priority="1" />
+      <Item value="TheGoal" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Prolog.Engine">
+      <Item value="Reset`0" priority="1" />
+      <Item value="Query" priority="2" />
+      <Item value="Ps" priority="15" />
+      <Item value="GetFirstSolution`0" priority="1" />
+      <Item value="SolutionIterator" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.GeneralGameNS.GeneralGame+GameDescriptionHornClauseClassifications">
+      <Item value="Init" priority="1" />
+      <Item value="Input" priority="1" />
+      <Item value="Goal" priority="0" />
+      <Item value="Terminal" priority="2" />
+      <Item value="_AllOther" priority="0" />
+      <Item value="Role" priority="3" />
+      <Item value="Legal" priority="0" />
+      <Item value="Next" priority="1" />
+      <Item value="Base" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GeneralGameNS.GeneralGame">
+      <Item value="InitializeGame`0" priority="0" />
+      <Item value="PrologEngine" priority="5" />
+      <Item value="LoadDescriptionFromGameDescriptionString`0" priority="0" />
+      <Item value="ApplyMoves`0" priority="1" />
+      <Item value="LoadDescriptionFromKIFFile`0" priority="0" />
+      <Item value="FindRoles`0" priority="1" />
+      <Item value="SaveCollapsedParseTrees`0" priority="0" />
+      <Item value="SaveParseTrees`0" priority="0" />
+      <Item value="KIFFilePath" priority="2" />
+      <Item value="FindTerminal`0" priority="1" />
+      <Item value="XMLStyleSheetFilePath" priority="0" />
+      <Item value="Name" priority="0" />
+      <Item value="Dispose`0" priority="1" />
+      <Item value="FindScores`0" priority="0" />
+      <Item value="UseOldWayOfGeneratingAndApplyingMoves" priority="0" />
+      <Item value="TempFilePath" priority="0" />
+      <Item value="GetStateAsCompleteXML`0" priority="2" />
+      <Item value="CurrentTurn" priority="1" />
+      <Item value="FindRandomLegal`0" priority="2" />
+      <Item value="FindLegalsWithEval`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Prolog.Engine+PredicateTable">
+      <Item value="Assert`0" priority="1" />
+      <Item value="ListAll`0" priority="6" />
+      <Item value="Predefineds" priority="1" />
+      <Item value="Indexer" priority="0" />
+      <Item value="Utilities" priority="0" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="IsPredefined`0" priority="1" />
+      <Item value="Reset`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Prolog.Engine">
+      <Item value="StringTerm`0" priority="0" />
+      <Item value="ClauseTerm`0" priority="1" />
+      <Item value="ListTerm`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.PredicateLogic.Term">
+      <Item value="ToString`0" priority="4" />
+      <Item value="DeepCopy`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Concurrent.ConcurrentDictionary`2">
+      <Item value="Where`1" priority="2" />
+      <Item value="ContainsKey`0" priority="0" />
+      <Item value="TryGetValue`0" priority="3" />
+      <Item value="GetOrAdd`0" priority="1" />
+      <Item value="AddOrUpdate`0" priority="0" />
+      <Item value="TryAdd`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GeneralGameManagerNS.GeneralGameManager">
+      <Item value="TheGeneralGame" priority="17" />
+      <Item value="Play`0" priority="1" />
+      <Item value="Players" priority="2" />
+      <Item value="StartNextMoveEvent" priority="0" />
+      <Item value="MilliSecondsBetweenFreeRunningMoves" priority="2" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="StartPlayFromHistoryFile`0" priority="0" />
+      <Item value="AllowFastTurnsWithNoPlayerMoves" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="ToString`0" priority="0" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="Text" priority="6" />
+      <Item value="Focus`0" priority="0" />
+      <Item value="ScrollToCaret`0" priority="0" />
+      <Item value="Select`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Prolog.Engine+ISolution">
+      <Item value="ToString`0" priority="1" />
+      <Item value="VarValuesIterator" priority="2" />
+      <Item value="Solved" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Environment">
+      <Item value="NewLine" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GeneralGamePlaying.PrologQuery">
+      <Item value="Show`0" priority="0" />
+      <Item value="Close`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetFileNameWithoutExtension`0" priority="4" />
+      <Item value="GetFileName`0" priority="0" />
+      <Item value="GetDirectoryName`0" priority="4" />
+      <Item value="DirectorySeparatorChar" priority="2" />
+      <Item value="PathSeparator" priority="1" />
+      <Item value="GetTempPath`0" priority="15" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.KeyEventArgs">
+      <Item value="KeyCode" priority="4" />
+      <Item value="Modifiers" priority="0" />
+      <Item value="Handled" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Keys">
+      <Item value="Enter" priority="0" />
+      <Item value="Home" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Hashtable">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.GeneralGameManagerNS.GGP">
+      <Item value="ReadyReplyString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GeneralGameNS.Move">
+      <Item value="TheMove" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.Interfaces.Move">
+      <Item value="TheMove" priority="6" />
+      <Item value="Role" priority="1" />
+      <Item value="ToString`0" priority="1" />
+      <Item value="ToPrologDoesClause`0" priority="3" />
+      <Item value="IsNoop`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Random">
+      <Item value="Next`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.Interfaces.PlayerManagerProtocolConstants">
+      <Item value="DoneReplyString" priority="1" />
+      <Item value="NilReplyString" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="Append`0" priority="27" />
+      <Item value="Remove`0" priority="3" />
+      <Item value="Length" priority="5" />
+      <Item value="ToString`0" priority="13" />
+      <Item value="AppendLine`0" priority="8" />
+      <Item value="Clear`0" priority="1" />
+      <Item value="AppendFormat`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Text.Encoding">
+      <Item value="ASCII" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.Encoding">
+      <Item value="GetBytes`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.Interfaces.IGeneralGamePlayer">
+      <Item value="StartAsync`0" priority="0" />
+      <Item value="DebugAndTraceHelper" priority="0" />
+      <Item value="Role" priority="0" />
+      <Item value="GetPrologEngine`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.GC">
+      <Item value="Collect`0" priority="1" />
+      <Item value="GetTotalMemory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.BackgroundWorker">
+      <Item value="DoWork" priority="1" />
+      <Item value="RunWorkerAsync`0" priority="2" />
+      <Item value="RunWorkerCompleted" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Wintellect.PowerCollections.MultiDictionary`2">
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.Parsing.RuleCollection">
+      <Item value="Clear`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Prolog.Engine+IVarValue">
+      <Item value="Value" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Open`0" priority="2" />
+      <Item value="OpenWrite`0" priority="0" />
+      <Item value="AppendAllLines`0" priority="0" />
+      <Item value="Exists`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.FileMode">
+      <Item value="Truncate" priority="0" />
+      <Item value="Create" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+      <Item value="TryParse`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="Message" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.Parsing.KIFRuleCollection">
+      <Item value="Instance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Trace">
+      <Item value="WriteLine`0" priority="1" />
+      <Item value="Listeners" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.TraceListenerCollection">
+      <Item value="Clear`0" priority="3" />
+      <Item value="Remove`0" priority="1" />
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@UtilitiesAndExtensions.DecoupledConsole">
+      <Item value="WriteLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UtilitiesAndExtensions.DecoupledConsole">
+      <Item value="WriteLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UtilitiesAndExtensions.DebugAndTraceHelper">
+      <Item value="WriteTraceLine`0" priority="0" />
+      <Item value="DecoupledConsole" priority="1" />
+      <Item value="OutputToDecoupledConsole" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GeneralGamePlayerNS.FirstGeneralGamePlayer">
+      <Item value="DebugAndTraceHelper" priority="1" />
+      <Item value="Role" priority="0" />
+      <Item value="GetPrologEngine`0" priority="0" />
+      <Item value="TempFilePath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UtilitiesAndExtensions.DecoupledConsoleTraceListener">
+      <Item value="decoupledConsole" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="Listeners" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.AutoResetEvent">
+      <Item value="WaitOne`0" priority="0" />
+      <Item value="Set`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripMenuItem">
+      <Item value="DropDownItems" priority="2" />
+      <Item value="Click" priority="0" />
+      <Item value="Checked" priority="5" />
+      <Item value="Enabled" priority="8" />
+      <Item value="Text" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripItemCollection">
+      <Item value="Clear`0" priority="0" />
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripButton">
+      <Item value="Enabled" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Application">
+      <Item value="ThreadException" priority="0" />
+      <Item value="ProductName" priority="2" />
+      <Item value="DoEvents`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.OpenFileDialog">
+      <Item value="InitialDirectory" priority="0" />
+      <Item value="Filter" priority="0" />
+      <Item value="RestoreDirectory" priority="0" />
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="FileName" priority="5" />
+      <Item value="Multiselect" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DialogResult">
+      <Item value="OK" priority="0" />
+      <Item value="Cancel" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.SaveFileDialog">
+      <Item value="FileName" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.Parsing.Goal">
+      <Item value="Symbol" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.TraceListener">
+      <Item value="Write`0" priority="0" />
+      <Item value="Flush`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@UtilitiesAndExtensions.DebugAndTraceHelper+LogFileLocation">
+      <Item value="CommonApplicationDirectory" priority="0" />
+      <Item value="ExecutableDirectory" priority="0" />
+      <Item value="LocalUserApplicationDirectory" priority="0" />
+      <Item value="TempDirectory" priority="0" />
+      <Item value="Custom" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@UtilitiesAndExtensions.DebugAndTraceHelper">
+      <Item value="AddLogFileListener`0" priority="1" />
+      <Item value="AddListener`0" priority="4" />
+      <Item value="WriteTraceLineUnchecked`0" priority="0" />
+      <Item value="WriteDebugLine`0" priority="0" />
+      <Item value="WriteTraceLine`0" priority="5" />
+      <Item value="StatusStripChannelId" priority="2" />
+      <Item value="stateChannelId" priority="0" />
+      <Item value="StateChannelId" priority="0" />
+      <Item value="ManagerChannelId" priority="0" />
+      <Item value="CustomLocation" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.TextWriterTraceListener">
+      <Item value="TraceOutputOptions" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Concurrent.ConcurrentBag`1">
+      <Item value="TryTake`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Guid">
+      <Item value="NewGuid`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.SessionMode">
+      <Item value="Required" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ServiceHost">
+      <Item value="Open`0" priority="3" />
+      <Item value="Close`0" priority="1" />
+      <Item value="AddServiceEndpoint`0" priority="1" />
+      <Item value="State" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SbsSW.SwiPlCs.PlMtEngine">
+      <Item value="PlSetEngine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SbsSW.SwiPlCs.PlEngine">
+      <Item value="PlThreadAttachEngine`0" priority="1" />
+      <Item value="IsInitialized" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SWIPrologServiceTest.ServiceReference1.PrologServiceClient">
+      <Item value="GetData`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SbsSW.SwiPlCs.PlQuery">
+      <Item value="Query`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SbsSW.SwiPlCs.PlQuery">
+      <Item value="SolutionVariables" priority="3" />
+      <Item value="Solutions" priority="2" />
+      <Item value="VariableNames" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SWIPrologServiceTest.ServiceReference1.SWIPrologServiceClient">
+      <Item value="Abort`0" priority="0" />
+      <Item value="Assert`0" priority="1" />
+      <Item value="GetSolutionVariables`0" priority="2" />
+      <Item value="Open`0" priority="2" />
+      <Item value="Close`0" priority="0" />
+      <Item value="GetSolutions`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="WriteLine`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SWIPrologServiceTest.ServiceReference1.PlTermV">
+      <Item value="ExtensionData" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SbsSW.SwiPlCs.PlQueryVariables">
+      <Item value="Indexer" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SbsSW.SwiPlCs.PlTerm">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SWIPrologServiceTest.ServiceReference1.ISWIPrologService">
+      <Item value="Assert`0" priority="0" />
+      <Item value="ExecuteClause`0" priority="0" />
+      <Item value="GetSolutionVariables`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:PrologEngine.PrologEngine">
+      <Item value="Assert`0" priority="12" />
+      <Item value="GetSolutionVariables`0" priority="6" />
+      <Item value="swiPrologServiceClient" priority="0" />
+      <Item value="ExecuteClause`0" priority="6" />
+      <Item value="Retract`0" priority="1" />
+      <Item value="ListAll`0" priority="0" />
+      <Item value="DeclareDynamic`0" priority="2" />
+      <Item value="ListAllFactsAsXML`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.ChannelFactory`1">
+      <Item value="CreateChannel`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.SecurityMode">
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SWIPrologServiceLibrary.SolutionVariable">
+      <Item value="Variable" priority="8" />
+      <Item value="Value" priority="13" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:SWIPrologServiceLibrary.ISWIPrologService">
+      <Item value="ExecuteClause`0" priority="1" />
+      <Item value="GetSolutionVariables`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="Write`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamWriter">
+      <Item value="WriteLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.PredicateLogic.Atom">
+      <Item value="PrologFunctorsAndTheirReplacements" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.IFormatter">
+      <Item value="Serialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.PredicateLogic.HornClause">
+      <Item value="SerializeToFile`0" priority="1" />
+      <Item value="SerializeFromFile`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.DockStyle">
+      <Item value="Fill" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Form">
+      <Item value="Controls" priority="1" />
+      <Item value="Show`0" priority="2" />
+      <Item value="Bounds" priority="0" />
+      <Item value="Location" priority="1" />
+      <Item value="Height" priority="5" />
+      <Item value="Text" priority="0" />
+      <Item value="WindowState" priority="0" />
+      <Item value="Tag" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control+ControlCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.ScrollBars">
+      <Item value="Both" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Rectangle">
+      <Item value="Width" priority="4" />
+      <Item value="Height" priority="0" />
+      <Item value="Bottom" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GeneralGamePlayingNS.Form1">
+      <Item value="ClientRectangle" priority="3" />
+      <Item value="statusStrip1" priority="1" />
+      <Item value="toolStripStatusLabel1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.EventArgs">
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Screen">
+      <Item value="GetWorkingArea`0" priority="0" />
+      <Item value="GetBounds`0" priority="0" />
+      <Item value="PrimaryScreen" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Screen">
+      <Item value="Bounds" priority="0" />
+      <Item value="WorkingArea" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.SystemInformation">
+      <Item value="HorizontalScrollBarHeight" priority="0" />
+      <Item value="VerticalScrollBarWidth" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.StatusStrip">
+      <Item value="Height" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripStatusLabel">
+      <Item value="GetCurrentParent`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStrip">
+      <Item value="InvokeRequired" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.UtilitiesAndExtensions.Utilities">
+      <Item value="RandomHelper`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.NetTcpBinding">
+      <Item value="MaxReceivedMessageSize" priority="1" />
+      <Item value="MaxBufferSize" priority="1" />
+      <Item value="MaxBufferPoolSize" priority="0" />
+      <Item value="MaxConnections" priority="0" />
+      <Item value="OpenTimeout" priority="0" />
+      <Item value="Security" priority="3" />
+      <Item value="ReaderQuotas" priority="1" />
+      <Item value="ReliableSession" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Tuple`2">
+      <Item value="Item1" priority="5" />
+      <Item value="Item2" priority="2" />
+      <Item value="GetHashCode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Point">
+      <Item value="Y" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.WebBrowser">
+      <Item value="DocumentText" priority="2" />
+      <Item value="Document" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Xsl.XslCompiledTransform">
+      <Item value="Load`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:UtilitiesAndExtensions.IEWebBrowserListener">
+      <Item value="xslFilePath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimpleDialog.InputBox">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@SimpleDialog.InputBoxResultType">
+      <Item value="UInt32" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.UInt32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConfigSettings">
+      <Item value="ReadSetting`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Specialized.StringCollection">
+      <Item value="Count" priority="1" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TSource">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@UtilitiesAndExtensions.WindowGeometryPersistence">
+      <Item value="SetFormsGeometry`0" priority="0" />
+      <Item value="SaveFormsGeometry`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.CommunicationState">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.Description.ServiceEndpoint">
+      <Item value="Binding" priority="3" />
+      <Item value="Behaviors" priority="0" />
+      <Item value="Contract" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.OptionalReliableSession">
+      <Item value="InactivityTimeout" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.NetTcpSecurity">
+      <Item value="Mode" priority="0" />
+      <Item value="Message" priority="0" />
+      <Item value="Transport" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.MessageSecurityOverTcp">
+      <Item value="AlgorithmSuite" priority="0" />
+      <Item value="ClientCredentialType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.Security.SecurityAlgorithmSuite">
+      <Item value="Basic256" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.MessageCredentialType">
+      <Item value="Windows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ServiceModel.TcpTransportSecurity">
+      <Item value="ProtectionLevel" priority="0" />
+      <Item value="ClientCredentialType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Net.Security.ProtectionLevel">
+      <Item value="None" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.ServiceModel.TcpClientCredentialType">
+      <Item value="Windows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDictionaryReaderQuotas">
+      <Item value="MaxArrayLength" priority="1" />
+      <Item value="MaxBytesPerRead" priority="0" />
+      <Item value="MaxDepth" priority="0" />
+      <Item value="MaxNameTableCharCount" priority="0" />
+      <Item value="MaxStringContentLength" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="IsBackground" priority="0" />
+      <Item value="Start`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Diagnostics.Process">
+      <Item value="Kill`0" priority="2" />
+      <Item value="Close`0" priority="1" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="HasExited" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MRUManager_dotNet4_example.MRUManager">
+      <Item value="AddRecentFile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Decimal">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.GGP.GeneralGameNS.GeneralGame">
+      <Item value="UseOldWayOfGeneratingAndApplyingMoves" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@StringDifferenceDialog.StringDifferenceDialog">
+      <Item value="ShowDialog`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:StringDifferenceDialog.StringDifferenceDialog">
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:GeneralGamePlaying.Properties.Settings">
+      <Item value="TempFilePath" priority="2" />
+      <Item value="WcfSvcHostExecutable" priority="0" />
+      <Item value="InitialGameFileLocationDirectory" priority="0" />
+      <Item value="InitialGameFileName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@GeneralGamePlaying.Properties.Settings">
+      <Item value="Default" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GeneralGameManagerNS.TurnRecord">
+      <Item value="Turn" priority="3" />
+      <Item value="State" priority="0" />
+      <Item value="GameState" priority="4" />
+      <Item value="Moves" priority="4" />
+      <Item value="IsInitialState" priority="0" />
+      <Item value="IsTerminalState" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GeneralGameManagerNS.GameState">
+      <Item value="GameStateAsXML" priority="3" />
+      <Item value="GameStateAsHTML" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@API.UtilitiesAndExtensions.DebugAndTraceHelper">
+      <Item value="ManagerChannelId" priority="1" />
+      <Item value="LogFileLocation`0" priority="1" />
+      <Item value="CustomLocation" priority="0" />
+      <Item value="BaseFileName" priority="0" />
+      <Item value="GetListeners`0" priority="0" />
+      <Item value="StateChannelId" priority="0" />
+      <Item value="WriteTraceLine`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.UtilitiesAndExtensions.IEWebBrowserListener">
+      <Item value="ieWebBrowser" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Max`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.SWIProlog.Engine.PrologEngine">
+      <Item value="Consult`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.GGP.GGPInterfacesNS.Move">
+      <Item value="TheMove" priority="3" />
+      <Item value="Tag" priority="4" />
+      <Item value="Role" priority="0" />
+      <Item value="IsNoop`0" priority="0" />
+      <Item value="IsRandomRole`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.SWIProlog.SWIPrologServiceLibrary.ISWIPrologService">
+      <Item value="Assert`0" priority="0" />
+      <Item value="ExecuteClause`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Process">
+      <Item value="GetProcessesByName`0" priority="0" />
+      <Item value="GetProcesses`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToInt16`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:API.SWIProlog.SWIPrologServiceLibrary.SolutionVariable">
+      <Item value="Variable" priority="1" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Uri">
+      <Item value="LocalPath" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Clipboard">
+      <Item value="SetText`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <Bookmarks>
+    <Bookmark owner="AnonymousBookmarkManager" id="eae44aa3-0cdf-4a9d-b375-1387321d4599" file-id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" coords="(Doc Ln 129 Col 23)" />
+    <Bookmark owner="AnonymousBookmarkManager" id="4cb8d578-ad9f-4468-8aac-d9a64ab1c80a" file-id="7E127119-B6E4-49D6-8E17-80F9CCD19164/f:Clause.cs" coords="(Doc Ln 466 Col 8)" />
+  </Bookmarks>
+</Configuration>

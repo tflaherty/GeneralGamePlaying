@@ -1,0 +1,21 @@
+
+From "Winning Ways, Volume 3", page 757:
+
+"Clobbers was invented in the summer of 2002 by Michael Albert, J.P. Grossman and Richard Nowakowski.  
+The first tournament was held at an academic conference on combinatorial game theory in Daghstuhl, 
+Germany, in February 2002."
+
+and
+
+"The legal moves of any piece are the intersection of a chess king and a chess rook (i.e. one square
+in any of four directions).  We call such a piece a "duke".  The game begins with all squares on a 
+rectangular board occupied according to their colors on a checkerboard: each white square occupied
+by a white duke, and each black square by a black duke.  Capturing occurs as in chess, one moves onto
+the square occupied by the opponent's duke, which is then removed from the board.  But in Clobber, 
+every move MUST be a capture."
+
+The game ends when the player to move doesn't have a legal move.
+
+                    
+       Tom Flaherty  (twf@apidev.com, blog at http://blog.apidev.com)
+       11/01/2013

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/SWIPrologServiceLibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SWIPrologServiceLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfArrayOfSolutionVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ArrayOfSolutionVariable" nillable="true" type="tns:ArrayOfSolutionVariable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfArrayOfSolutionVariable" nillable="true" type="tns:ArrayOfArrayOfSolutionVariable" />
+  <xs:complexType name="ArrayOfSolutionVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SolutionVariable" nillable="true" type="tns:SolutionVariable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSolutionVariable" nillable="true" type="tns:ArrayOfSolutionVariable" />
+  <xs:complexType name="SolutionVariable">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Variable" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SolutionVariable" nillable="true" type="tns:SolutionVariable" />
+</xs:schema>

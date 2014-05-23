@@ -1,0 +1,578 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Dark Chess
+;;;     Created by Tom Flaherty (twf@apidev.com, blog at http://blog.apidev.com)
+;;;     on 11/072013
+;;;     From rules on Wikipedia
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;
+;;	To Do:
+;;		Finish random initial piece placement
+;;		Make can capture adjacent use piece ranking
+;;		Find out if clauses are guaranteed to run in the order they're presented in the file!
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Components
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(role p1)
+(role p2)
+(role random)
+
+(pieceOwner p1)
+(pieceOwner p2)
+(pieceOwner nobody)
+
+(pieceColor red)
+(pieceColor black)
+
+(pieceType a)
+(pieceType c)
+(pieceType r)
+(pieceType e)
+(pieceType g)
+(pieceType h)
+(pieceType s)
+
+(pieceState hidden)
+(pieceState showing)
+
+(<= (base (piece ?c ?t ?x ?y ?o ?s)) 
+	(pieceColor ?c) (pieceType ?t) (index_x ?x) (index_y ?y) (pieceOwner ?o) (pieceState ?s))
+
+(<= (base (control ?p)) (role ?p))
+
+(<= (base (pieceToPlace ?c ?t ?id))
+	(pieceColor ?c) (pieceType ?t) (init (pieceToPlace ?c ?t ?id)))
+
+(base (turn piecePlacement))
+(base (turn 1))
+(base (turn n))
+
+;; x increases from left to right
+(index_x 1)
+(index_x 2)
+(index_x 3)
+(index_x 4)
+(index_x 5)
+(index_x 6)
+(index_x 7)
+(index_x 8)
+
+;; y increases from bottom to top
+(index_y 1)
+(index_y 2)
+(index_y 3)
+(index_y 4)
+
+;; game piece info
+(pieceInfo black a 2)	;; black advisor, 2 per side, rank 2 (Taiwan), rank 4? (Hong Kong)
+(pieceInfo red   a 2)	;; red advisor, 2 per side, rank 2 (Taiwan), rank 4? (Hong Kong)
+(pieceInfo black c 2)	;; black cannon, 2 per side, abilities vary
+(pieceInfo red   c 2)	;; red cannon, 2 per side, abilities vary
+(pieceInfo black r 2)	;; black chariot (rook), 2 per side, rank 4? (Taiwan), rank 2 (Hong Kong)
+(pieceInfo red   r 2)	;; red chariot (rook), 2 per side, rank 4? (Taiwan), rank 2 (Hong Kong)
+(pieceInfo black e 2)	;; black elephant, 2 per side, rank 3
+(pieceInfo red   e 2)	;; red elephant, 2 per side, rank 3
+(pieceInfo black g 1)	;; black general, 1 per side, rank 1 (highest)
+(pieceInfo red   g 1)	;; red general, 1 per side, rank 1 (highest)
+(pieceInfo black h 2)	;; black horse, 2 per side, rank 5
+(pieceInfo red   h 2)	;; red horse, 2 per side, rank 5
+(pieceInfo black s 5)	;; black soldier, 5 per side, rank 6 (lowest except able to capture general)
+(pieceInfo red   s 5)	;; red soldier, 5 per side, rank 6 (lowest except able to capture general)
+
+;; piece placement 
+(init (pieceToPlace black a 1))	;; black advisor, id 1
+(init (pieceToPlace black a 2))	;; black advisor, id 2
+(init (pieceToPlace red   a 3))	;; red advisor,   id 3
+(init (pieceToPlace red   a 4))	;; red advisor,   id 4
+(init (pieceToPlace black c 5))	;; black cannon,  id 5
+(init (pieceToPlace black c 6))	;; black cannon,  id 6
+(init (pieceToPlace red   c 7))	;; red cannon,    id 7
+(init (pieceToPlace red   c 8))	;; red cannon,    id 8
+(init (pieceToPlace black r 9))	;; black chariot (rook), id 9
+(init (pieceToPlace black r 10))	;; black chariot (rook), id 10
+(init (pieceToPlace red   r 11))	;; red chariot (rook),   id 11
+(init (pieceToPlace red   r 12))	;; red chariot (rook),   id 12
+(init (pieceToPlace black e 13))	;; black elephant, id 13
+(init (pieceToPlace black e 14))	;; black elephant, id 14
+(init (pieceToPlace red   e 15))	;; red elephant,   id 15
+(init (pieceToPlace red   e 16))	;; red elephant,   id 16
+(init (pieceToPlace black g 17))	;; black general,  id 17
+(init (pieceToPlace red   g 18))	;; red general,    id 18
+(init (pieceToPlace black h 19))	;; black horse,    id 19
+(init (pieceToPlace black h 20))	;; black horse,    id 20
+(init (pieceToPlace red   h 21))	;; red horse,      id 21
+(init (pieceToPlace red   h 22))	;; red horse,      id 22
+
+(init (pieceToPlace black s 23))	;; black soldier,  id 23
+(init (pieceToPlace black s 24))	;; black soldier,  id 24
+(init (pieceToPlace black s 25))	;; black soldier,  id 25
+(init (pieceToPlace black s 26))	;; black soldier,  id 26
+(init (pieceToPlace black s 27))	;; black soldier,  id 27
+
+(init (pieceToPlace red   s 28))	;; red soldier,    id 28
+(init (pieceToPlace red   s 29))	;; red soldier,    id 29
+(init (pieceToPlace red   s 30))	;; red soldier,    id 30
+(init (pieceToPlace red   s 31))	;; red soldier,    id 31
+(init (pieceToPlace red   s 32))	;; red soldier,    id 32
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; init
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(init (control random))
+
+(init (turn piecePlacement))
+
+;; initial layout should be random but we'll use a fixed one for now
+;;  (init (piece red   s 1 1 nobody hidden))
+;;  (init (piece black g 2 1 nobody hidden))
+;;  (init (piece red   a 3 1 nobody hidden))
+;;  (init (piece black s 4 1 nobody hidden))
+;;  (init (piece red   s 5 1 nobody hidden))
+;;  (init (piece black r 6 1 nobody hidden))
+;;  (init (piece black h 7 1 nobody hidden))
+;;  (init (piece black r 8 1 nobody hidden))
+
+;;  (init (piece black s 1 2 nobody hidden))
+;;  (init (piece red   s 2 2 nobody hidden))
+;;  (init (piece red   e 3 2 nobody hidden))
+;;  (init (piece black a 4 2 nobody hidden))
+;;  (init (piece red   s 5 2 nobody hidden))
+;;  (init (piece red   r 6 2 nobody hidden))
+;;  (init (piece red   c 7 2 nobody hidden))
+;;  (init (piece red   s 8 2 nobody hidden))
+
+;;  (init (piece black c 1 3 nobody hidden))
+;;  (init (piece red   h 2 3 nobody hidden))
+;;  (init (piece red   r 3 3 nobody hidden))
+;;  (init (piece black s 4 3 nobody hidden))
+;;  (init (piece red   e 5 3 nobody hidden))
+;;  (init (piece black a 6 3 nobody hidden))
+;;  (init (piece black h 7 3 nobody hidden))
+;;  (init (piece red   a 8 3 nobody hidden))
+
+;;  (init (piece black e 1 4 nobody hidden))
+;;  (init (piece red   c 2 4 nobody hidden))
+;;  (init (piece black s 3 4 nobody hidden))
+;;  (init (piece red   g 4 4 nobody hidden))
+;;  (init (piece black c 5 4 nobody hidden))
+;;  (init (piece black s 6 4 nobody hidden))
+;;  (init (piece red   h 7 4 nobody hidden))
+;;  (init (piece black e 8 4 nobody hidden))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; legal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= (legal random noop)
+	(true (control ?op))
+	(role ?op)
+	(distinct random ?op))
+
+(<= (legal random (place ?id ?x ?y))
+	(true (turn piecePlacement))
+	(pieceToPlace ?c ?t ?id)
+	(index_x ?x)
+	(index_y ?y)
+	(not (piece ?c1 ?t1 ?x ?y ?o ?s)))
+
+(<= (legal ?p (flip ?x ?y))
+	(or (turn 1) (turn n))
+	(true (control ?p))
+	(true (piece ?pc ?pt ?x ?y ?o hidden)))
+
+(<= (legal ?p (capture ?x1 ?y1 ?x2 ?y2))
+	(true (control ?p))
+	(true (piece ?c1 ?t1 ?x1 ?y1 ?p showing))
+	(adjacent ?x1 ?y1 ?x2 ?y2)
+	(pieceOwner ?op)
+	(distinct ?p ?op)
+	(distinct ?op nobody)
+	(true (piece ?c2 ?t2 ?x2 ?y2 ?op showing))
+	(canCaptureAdjacent ?t1 ?t2)
+	(distinct ?t1 c))
+
+(<= (legal ?p (capture ?x1 ?y1 ?x2 ?y2))
+	(true (control ?p))
+	(true (piece ?c1 c ?x1 ?y1 ?p showing))
+	(screened ?x1 ?y1 ?x2 ?y2)
+	(pieceOwner ?op)
+	(distinct ?p ?op)
+	(distinct ?op nobody)
+	(true (piece ?c2 ?t2 ?x2 ?y2 ?op showing))) 
+
+(<= (legal ?p (move ?xo ?yo ?xn ?yn))
+	(true (control ?p))
+	(piece ?c ?t ?xo ?yo ?p showing)
+	(adjacent ?xo ?yo ?xn ?yn)
+	(not (piece ?c1 ?t1 ?xn ?yn ?op ?s)))
+
+(<= (legal ?op noop)
+	(true (control ?p))
+	(role ?op)
+	(distinct ?p ?op)
+	(distinct random ?op))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; next
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;; piecePlacement turns  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; place a piece onto the board 
+(<= (next (piece ?c ?t ?x ?y nobody hidden))
+	(true (turn piecePlacement))
+	(does random (place ?id ?x ?y))
+	(pieceToPlace ?c ?t ?id))
+
+;; Keep pieces in the list of pieces to be placed that haven't been placed yet 
+(<= (next (pieceToPlace ?c ?t ?id))
+	(true (turn piecePlacement))
+	(pieceToPlace ?c ?t ?id)
+	(does random (place ?oid ?x ?y))
+	(distinct ?id ?oid))
+
+;; keep pieces where they are during piece placement
+(<= (next (piece ?c ?t ?x ?y ?p ?s))
+	(true (turn piecePlacement))
+	(piece ?c ?t ?x ?y ?p ?s))
+
+;; give control to p1 if we have placed the last piece
+(<= (next (control p1))
+	(true (turn piecePlacement))
+	(does random (place ?id ?x ?y))
+	(not (hasAnyPieceToPlaceOtherThan ?id)))
+
+;; keep control with random if there is at least one piece that hasn't been placed
+(<= (next (control random))
+	(true (turn piecePlacement))
+	(does random (place ?id ?x ?y))
+	(hasAnyPieceToPlaceOtherThan ?id))
+
+;; go to turn 1 if we have placed the last piece
+(<= (next (turn 1))
+	(true (turn piecePlacement))
+	(does random (place ?id ?x ?y))
+	(not (hasAnyPieceToPlaceOtherThan ?id)))
+
+;; stay in piece placement if there is at least one piece that hasn't been placed
+(<= (next (turn piecePlacement))
+	(true (turn piecePlacement))
+	(does random (place ?id ?x ?y))
+	(hasAnyPieceToPlaceOtherThan ?id))
+
+
+;;;;;;;; turn 1 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Set the owner of all the pieces that are the same color as the one just flipped to
+;; the player that just flipped the piece.  Keep all these pieces in their current cells 
+;; and keep their visibility setting.
+(<= (next (piece ?c ?at ?ax ?ay ?p ?s))
+	(true (turn 1))
+	(does ?p (flip ?x ?y))
+	(piece ?c ?t ?x ?y nobody ?s)
+	(piece ?c ?at ?ax ?ay nobody ?s)
+	(or (distinct ?x ?ax) (distinct ?y ?ay)))
+
+;; Set the owner of all the pieces that are a different color as the one just flipped to 
+;; the player that didn't just flip the piece.  Keep all these pieces in their current cells 
+;; and keep their visibility setting.
+(<= (next (piece ?oc ?at ?ax ?ay ?op ?as))
+	(true (turn 1))
+	(does ?p (flip ?x ?y))
+	(pieceOwner ?op)
+	(pieceColor ?oc)
+	(piece ?c ?t ?x ?y nobody ?s)
+	(piece ?oc ?at ?ax ?ay nobody ?as)
+	(distinct ?op nobody)
+	(distinct ?op ?p)
+	(distinct ?c ?oc))
+
+;; show the piece that was just flipped and set its owner to the player that flipped it
+(<= (next (piece ?c ?t ?x ?y ?p showing))
+	(true (turn 1))
+	(does ?p (flip ?x ?y))
+	(piece ?c ?t ?x ?y ?ap hidden))
+
+(<= (next (turn n))
+	(true (turn 1)))
+
+;;;;;;;; turn n ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; show the piece that was just flipped 
+(<= (next (piece ?c ?t ?x ?y ?ap showing))
+	(true (turn n))
+	(does ?p (flip ?x ?y))
+	(piece ?c ?t ?x ?y ?ap hidden))
+
+;; try this condensed version of the three following
+;; clauses now that I found out why it wasn't working
+;;(<= (next (piece ?c ?t ?x2 ?y2 ?ap ?s))
+;;	(true (turn n))
+;;	(piece ?c ?t ?x2 ?y2 ?ap ?s)
+;;	(not (does ?p (move ?x1 ?y1 ?x2 ?y2)))
+;;	(not (does ?p (capture ?x3 ?y3 ?x2 ?y2)))
+;;	(not (does ?p (flip ?x2 ?y2))))
+
+;; keep a piece at its current location and visibility
+;; if it hasn't moved
+(<= (next (piece ?c ?t ?x ?y ?p ?s))
+	(true (turn n))
+	(does ?ap (move ?x1 ?y1 ?x2 ?y2))
+	(piece ?c ?t ?x ?y ?p ?s)
+	(different_cell ?x ?y ?x1 ?y1)
+	(different_cell ?x ?y ?x2 ?y2))
+;;	(or (distinct ?x ?x1) (distinct ?y ?y1))
+;;	(or (distinct ?x ?x2) (distinct ?y ?y2)))
+
+;; keep a piece at its current location and visibility
+;; if it hasn't capture
+(<= (next (piece ?c ?t ?x ?y ?p ?s))
+	(true (turn n))
+	(does ?ap (capture ?x1 ?y1 ?x2 ?y2))
+	(piece ?c ?t ?x ?y ?p ?s)
+	(different_cell ?x ?y ?x1 ?y1)
+	(different_cell ?x ?y ?x2 ?y2))
+;;	(or (distinct ?x ?x1) (distinct ?y ?y1))
+;;	(or (distinct ?x ?x2) (distinct ?y ?y2)))
+
+;; keep a piece at its current location and visibility
+;; if it hasn't flipped
+(<= (next (piece ?c ?t ?x ?y ?p ?s))
+	(true (turn n))
+	(does ?ap (flip ?x1 ?y1))
+	(piece ?c ?t ?x ?y ?p ?s)
+	(different_cell ?x ?y ?x1 ?y1))
+;;	(or (distinct ?x ?x1) (distinct ?y ?y1))
+
+(<= (next (turn n))
+	(true (turn n)))
+
+;;;;;;;; any turn ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; move a capturing piece to its destination cell
+(<= (next (piece ?c ?t ?x2 ?y2 ?p showing))
+	(does ?p (capture ?x1 ?y1 ?x2 ?y2))
+	(piece ?c ?t ?x1 ?y1 ?p showing))
+
+;; move a moving piece to its destination cell
+(<= (next (piece ?c ?t ?x2 ?y2 ?p showing))
+	(does ?p (move ?x1 ?y1 ?x2 ?y2))	
+	(piece ?c ?t ?x1 ?y1 ?p showing))
+
+(<= (next (control ?op))
+	(true (control ?p))
+	(distinct random ?p)
+	(role ?op)
+	(distinct random ?op)
+	(distinct ?p ?op))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; goal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= (goal ?p 0)
+	(control ?p)
+	(not (legal ?p (move ?x1 ?y1 ?x2 ?y2)))
+	(not (legal ?p (capture ?x1 ?y1 ?x2 ?y2)))
+	(not (legal ?p (flip ?x1 ?y1))))
+
+(<= (goal ?p 100)
+	(role ?p)
+	(control ?op)
+	(distinct ?p ?op)
+	(not (legal ?op (move ?x1 ?y1 ?x2 ?y2)))
+	(not (legal ?op (capture ?x1 ?y1 ?x2 ?y2)))
+	(not (legal ?op (flip ?x1 ?y1))))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; terminal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= terminal
+	(turn n)
+	(control ?p)
+	(not (legal ?p (move ?x1 ?y1 ?x2 ?y2)))
+	(not (legal ?p (capture ?x1 ?y1 ?x2 ?y2)))
+	(not (legal ?p (flip ?x1 ?y1))))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; game specific auxiliary predicates
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; canCaptureAdjacent
+(canCaptureAdjacent g g)
+(canCaptureAdjacent g a)
+(canCaptureAdjacent g e)
+(canCaptureAdjacent g r)
+(canCaptureAdjacent g h)
+(canCaptureAdjacent g c)
+(canCaptureAdjacent a a)
+(canCaptureAdjacent a e)
+(canCaptureAdjacent a r)
+(canCaptureAdjacent a h)
+(canCaptureAdjacent a s)
+(canCaptureAdjacent a c)
+
+(canCaptureAdjacent e e)
+(canCaptureAdjacent e r)
+(canCaptureAdjacent e h)
+(canCaptureAdjacent e s)
+(canCaptureAdjacent e c)
+
+(canCaptureAdjacent r r)
+(canCaptureAdjacent r h)
+(canCaptureAdjacent r s)
+(canCaptureAdjacent r c)
+
+(canCaptureAdjacent h h)
+(canCaptureAdjacent h s)
+(canCaptureAdjacent h c)
+
+(canCaptureAdjacent s s)
+(canCaptureAdjacent s g)
+
+(<= (hasAnyPieceToPlaceOtherThan ?id)
+	(pieceToPlace ?c ?t ?oid)
+	(distinct ?id ?oid))
+	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; general auxiliary predicates
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= (adjacent ?x1 ?y1 ?x2 ?y1)
+	(or (next_x ?x1 ?x2) (next_x ?x2 ?x1)))
+
+(<= (adjacent ?x1 ?y1 ?x1 ?y2)
+	(or (next_y ?y1 ?y2) (next_y ?y2 ?y1)))
+
+(<= (different_cell ?x1 ?y1 ?x1 ?y2)
+	(index_x ?x1)
+	(index_y ?y1)
+	(index_y ?y2)
+	(distinct ?y1 ?y2))
+
+(<= (different_cell ?x1 ?y1 ?x2 ?y1)
+	(index_y ?y1)
+	(index_x ?x1)
+	(index_x ?x2)
+	(distinct ?x1 ?x2))
+
+(<= (different_cell ?x1 ?y1 ?x2 ?y2)
+	(index_x ?x1)
+	(index_x ?x2)
+	(index_y ?y1)
+	(index_y ?y2)
+	(distinct ?x1 ?x2)
+	(distinct ?y1 ?y2))
+
+(<= (screened ?x1 ?y1 ?x1 ?y2)
+	(screened ?x1 ?y1 ?x1 ?y2 up))
+
+(<= (screened ?x1 ?y1 ?x1 ?y2)
+	(screened ?x1 ?y1 ?x1 ?y2 down))
+
+(<= (screened ?x1 ?y1 ?x2 ?y1)
+	(screened ?x1 ?y1 ?x2 ?y1 right))
+
+(<= (screened ?x1 ?y1 ?x2 ?y1)
+	(screened ?x1 ?y1 ?x2 ?y1 left))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 up)
+	(next_y ?y1 ?y2)
+	(piece ?c ?t ?x1 ?y2 ?o ?s)
+	(screened_1 ?x1 ?y2 ?x1 ?y3 up))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 up)
+	(next_y ?y1 ?y2)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened ?x1 ?y2 ?x1 ?y3 up))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y2 up)
+	(next_y ?y1 ?y2)
+	(piece ?c ?t ?x1 ?y2 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y3 up)
+	(next_y ?y1 ?y2)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened_1 ?x1 ?y2 ?x1 ?y3 up))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 down)
+	(next_y ?y2 ?y1)
+	(piece ?c ?t ?x1 ?y2 ?o ?s)
+	(screened_1 ?x1 ?y2 ?x1 ?y3 down))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 down)
+	(next_y ?y2 ?y1)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened ?x1 ?y2 ?x1 ?y3 down))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y2 down)
+	(next_y ?y2 ?y1)
+	(piece ?c ?t ?x1 ?y2 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y3 down)
+	(next_y ?y2 ?y1)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened_1 ?x1 ?y2 ?x1 ?y3 down))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 right)
+	(next_x ?x1 ?x2)
+	(piece ?c ?t ?x2 ?y1 ?o ?s)
+	(screened_1 ?x2 ?y1 ?x3 ?y1 right))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 right)
+	(next_x ?x1 ?x2)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened ?x2 ?y1 ?x3 ?y1 right))
+
+(<= (screened_1 ?x1 ?y1 ?x2 ?y1 right)
+	(next_x ?x1 ?x2)
+	(piece ?c ?t ?x2 ?y1 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x3 ?y1 right)
+	(next_x ?x1 ?x2)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened_1 ?x2 ?y1 ?x3 ?y1 right))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 left)
+	(next_x ?x2 ?x1)
+	(piece ?c ?t ?x2 ?y1 ?o ?s)
+	(screened_1 ?x2 ?y1 ?x3 ?y1 left))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 left)
+	(next_x ?x2 ?x1)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened ?x2 ?y1 ?x3 ?y1 left))
+
+(<= (screened_1 ?x1 ?y1 ?x2 ?y1 left)
+	(next_x ?x2 ?x1)
+	(piece ?c ?t ?x2 ?y1 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x3 ?y1 left)
+	(next_x ?x2 ?x1)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened_1 ?x2 ?y1 ?x3 ?y1 left))
+
+
+	
+
+(next_x 1 2)
+(next_x 2 3)		
+(next_x 3 4)	
+(next_x 4 5)
+(next_x 5 6)
+(next_x 6 7)
+(next_x 7 8)
+
+(next_y 1 2)
+(next_y 2 3)		
+(next_y 3 4)	
+
+
+
+

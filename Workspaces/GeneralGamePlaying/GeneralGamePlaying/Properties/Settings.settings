@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="GeneralGamePlaying.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WindowGeometry" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;"dummy"&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="WcfSvcHostExecutable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\WcfSvcHost.exe</Value>
+    </Setting>
+    <Setting Name="TempFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\temp\GeneralGamePlaying\</Value>
+    </Setting>
+    <Setting Name="InitialGameFileLocationDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\AI\Docs\GGPRulesSheetsAndOtherDocs</Value>
+    </Setting>
+    <Setting Name="InitialGameFileName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tictactoe.kif</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

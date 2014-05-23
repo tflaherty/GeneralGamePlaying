@@ -1,0 +1,89 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:TokenSeqToTerm.cs" caret="5917" fromTop="13" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:TermArray.cs" caret="3149" fromTop="25" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:DerivedTerms.cs" caret="17938" fromTop="29" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredDescr.cs" caret="7591" fromTop="29" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Builtins.cs" caret="82327" fromTop="24" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:IO.cs" caret="6378" fromTop="43" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/d:PG/f:PrologParserEx.cs" caret="21638" fromTop="54" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/d:PG/f:BaseParser.cs" caret="1595" fromTop="15" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="1033" fromTop="0" />
+      <File id="BB06ADF9-92C3-4F92-8397-5ACC92208528/d:Properties/f:Resources.Designer.cs" caret="2319" fromTop="48" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="29825" fromTop="36" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Engine.cs" caret="917" fromTop="19" />
+      <File id="BB06ADF9-92C3-4F92-8397-5ACC92208528/f:Program.cs" caret="235" fromTop="11" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/d:PG/f:PL.cs" caret="283" fromTop="11" />
+      <File id="BB06ADF9-92C3-4F92-8397-5ACC92208528/f:MainForm.cs" caret="7356" fromTop="24" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/d:PG/f:Parser.tpl" caret="576" fromTop="21" />
+      <File id="B7438FBF-6E46-4065-A60B-1B1CA2AC9875/f:Main.cs" caret="861" fromTop="13" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:BaseTerm.cs" caret="6334" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="1114" fromTop="18" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="11652" fromTop="20" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="12085" fromTop="33" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="12510" fromTop="26" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="12975" fromTop="20" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="18149" fromTop="30" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="17840" fromTop="8" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Builtins.cs" caret="22423" fromTop="20" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Builtins.cs" caret="33412" fromTop="25" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Builtins.cs" caret="35212" fromTop="20" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Builtins.cs" caret="82230" fromTop="20" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="3243" fromTop="21" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="7042" fromTop="23" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="9853" fromTop="32" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="21270" fromTop="49" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="19810" fromTop="12" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="20210" fromTop="22" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="20765" fromTop="30" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="20941" fromTop="34" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="23841" fromTop="49" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="23696" fromTop="46" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="22673" fromTop="22" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="23804" fromTop="41" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="21235" fromTop="43" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>D:\Program Files (x86)\NUnit 2.6.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="out" priority="1" />
+      <Item value="string" priority="3" />
+      <Item value="var" priority="1" />
+      <Item value="new" priority="1" />
+      <Item value="StringBuffer`0" priority="0" />
+      <Item value="StringBuilder`0" priority="1" />
+      <Item value="outputString" priority="3" />
+      <Item value="sb" priority="8" />
+      <Item value="clauseOutputString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="AppendLine`0" priority="3" />
+      <Item value="Append`0" priority="1" />
+      <Item value="AppendFormat`0" priority="1" />
+      <Item value="ToString`0" priority="1" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

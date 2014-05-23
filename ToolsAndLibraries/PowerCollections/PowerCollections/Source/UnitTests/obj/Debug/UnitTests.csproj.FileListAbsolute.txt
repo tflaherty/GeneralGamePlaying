@@ -1,0 +1,10 @@
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\obj\Debug\ResolveAssemblyReference.cache
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\bin\Debug\UnitTests.exe
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\bin\Debug\UnitTests.pdb
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\bin\Debug\nunit.framework.dll
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\bin\Debug\PowerCollections.dll
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\bin\Debug\PowerCollections.pdb
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\bin\Debug\nunit.framework.xml
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\obj\Debug\UnitTests.exe
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\obj\Debug\UnitTests.pdb
+D:\AI\ToolsAndLibraries\PowerCollections\PowerCollections\Source\UnitTests\bin\Debug\UnitTests.exe.config

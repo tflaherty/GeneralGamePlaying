@@ -1,0 +1,4 @@
+( <= ( some_win ) ( win ?p ) )
+( <= ( goal ?p 50 ) ( role ?p ) ( not ( some_win ) ) )
+( <= ( goal ?p 0 ) ( some_win ) ( role ?p ) ( not ( win ?p ) ) )
+

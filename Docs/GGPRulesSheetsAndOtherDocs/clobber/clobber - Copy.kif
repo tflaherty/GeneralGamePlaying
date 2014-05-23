@@ -1,0 +1,162 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Clobber
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Components
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(role w)
+(role b)
+
+(<= (base (cell ?x ?y w)) (index_x ?x) (index_y ?y))
+(<= (base (cell ?x ?y b)) (index_x ?x) (index_y ?y))
+(<= (base (cell ?x ?y e)) (index_x ?x) (index_y ?y))
+(base (control w))
+(base (control b))
+
+(index_x 1)
+(index_x 2)
+(index_x 3)
+(index_x 4)
+(index_x 5)
+(index_x 6)
+
+(index_y 1)
+(index_y 2)
+(index_y 3)
+(index_y 4)
+(index_y 5)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; init
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(init (control w))
+
+(init (cell 1 1 w))
+(init (cell 1 2 b))
+(init (cell 1 3 w))
+(init (cell 1 4 b))
+(init (cell 1 5 w))
+
+(init (cell 2 1 b))
+(init (cell 2 2 w))
+(init (cell 2 3 b))
+(init (cell 2 4 w))
+(init (cell 2 5 b))
+
+(init (cell 3 1 w))
+(init (cell 3 2 b))
+(init (cell 3 3 w))
+(init (cell 3 4 b))
+(init (cell 3 5 w))
+
+(init (cell 4 1 b))
+(init (cell 4 2 w))
+(init (cell 4 3 b))
+(init (cell 4 4 w))
+(init (cell 4 5 b))
+
+(init (cell 5 1 w))
+(init (cell 5 2 b))
+(init (cell 5 3 w))
+(init (cell 5 4 b))
+(init (cell 5 5 w))
+
+(init (cell 6 1 b))
+(init (cell 6 2 w))
+(init (cell 6 3 b))
+(init (cell 6 4 w))
+(init (cell 6 5 b))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; legal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= (legal ?p (move ?xo ?yo ?xn ?yn)) 
+	(true (cell ?xo ?yo ?p))
+	(true (cell ?xn ?yn ?op))
+	(true (adjacent ?xo ?yo ?xn ?yn))
+	(role ?op)
+	(distinct ?p ?op)
+	(true (control ?p)))
+
+(<= (legal ?op noop)
+	(true (control ?p))
+	(role ?op)
+	(distinct ?p ?op))
+    
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; next
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	(<= (next (cell ?m ?n e))
+		(true (cell ?m ?n e)))
+
+	(<= (next (cell ?xo ?yo e))
+		(does ?p (move ?xo ?yo ?xn ?yn)))
+
+	(<= (next (cell ?xn ?yn ?p))
+		(does ?p (move ?xo ?yo ?xn ?yn)))
+
+	(<= (next (cell ?x ?y ?p))
+		(true (cell ?x ?y ?p))
+		(role ?p)
+		(role ?op)
+		(does ?op (move ?xo ?yo ?xn ?yn))
+		(or (distinct ?x ?xo) (distinct ?x ?xn))
+		(or (distinct ?y ?yo) (distinct ?y ?yn)))
+
+	(<= (next (control ?op))
+		(true (control ?p))
+		(role ?op)
+		(distinct ?p ?op))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; goal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	(<= (goal ?p 0)
+		(control ?p)
+		(not (legal ?p (move ?xo ?yo ?xn ?yn))))
+
+	(<= (goal ?p 100)
+		(control ?op)
+		(role ?p)
+		(distinct ?p ?op)
+		(not (legal ?p (move ?xo ?yo ?xn ?yn))))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; terminal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	(<= terminal
+		(control ?p)
+		(not (legal ?p (move ?xo ?yo ?xn ?yn))))		
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; auxiliary predicates
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+	(<= (adjacent ?x1 ?y1 ?x2 ?y1)
+		(or (next_x ?x1 ?x2) (next_x ?x2 ?x1)))
+
+	(<= (adjacent ?x1 ?y1 ?x1 ?y2)
+		(or (next_y ?y1 ?y2) (next_y ?y2 ?y1)))
+
+	(next_x 1 2)
+	(next_x 2 3)		
+	(next_x 3 4)	
+	(next_x 4 5)
+	(next_x 5 6)
+
+	(next_y 1 2)
+	(next_y 2 3)		
+	(next_y 3 4)	
+	(next_y 4 5)

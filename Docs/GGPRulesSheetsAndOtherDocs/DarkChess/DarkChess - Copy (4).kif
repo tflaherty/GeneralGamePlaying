@@ -1,0 +1,414 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Dark Chess
+;;;     Created by Tom Flaherty (twf@apidev.com, blog at http://blog.apidev.com)
+;;;     on 11/072013
+;;;     From rules on Wikipedia
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Components
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(role p1)
+(role p2)
+
+(pieceOwner p1)
+(pieceOwner p2)
+(pieceOwner nobody)
+
+(pieceColor red)
+(pieceColor black)
+
+(pieceType a)
+(pieceType c)
+(pieceType r)
+(pieceType e)
+(pieceType g)
+(pieceType h)
+(pieceType s)
+
+(pieceState hidden)
+(pieceState showing)
+
+(<= (base (piece ?c ?t ?x ?y ?o ?s)) 
+	(pieceColor ?c) (pieceType ?t) (index_x ?x) (index_y ?y) (pieceOwner ?o) (pieceState ?s))
+
+(<= (base (control ?p)) (role ?p))
+
+(base (turn 1))
+(base (turn n))
+
+;; x increases from left to right
+(index_x 1)
+(index_x 2)
+(index_x 3)
+(index_x 4)
+(index_x 5)
+(index_x 6)
+(index_x 7)
+(index_x 8)
+
+;; y increases from bottom to top
+(index_y 1)
+(index_y 2)
+(index_y 3)
+(index_y 4)
+
+;; game pieces
+;; (piece white a)	;; white advisor, 2 per side, rank 2 (Taiwan), rank 4? (Hong Kong)
+;; (piece red   a)	;; red advisor, 2 per side, rank 2 (Taiwan), rank 4? (Hong Kong)
+;; (piece white c)	;; white cannon, 2 per side, abilities vary
+;; (piece red   c)	;; red cannon, 2 per side, abilities vary
+;; (piece white r)	;; white chariot (rook), 2 per side, rank 4? (Taiwan), rank 2 (Hong Kong)
+;; (piece red   r)	;; red chariot (rook), 2 per side, rank 4? (Taiwan), rank 2 (Hong Kong)
+;; (piece white e)	;; white elephant, 2 per side, rank 3
+;; (piece red   e)	;; red elephant, 2 per side, rank 3
+;; (piece white g)	;; white general, 1 per side, rank 1 (highest)
+;; (piece red   g)	;; red general, 1 per side, rank 1 (highest)
+;; (piece white h)	;; white horse, 2 per side, rank 5
+;; (piece red   h)	;; red horse, 2 per side, rank 5
+;; (piece white s)	;; white soldier, 5 per side, rank 6 (lowest except able to capture general)
+;; (piece red   s)	;; red soldier, 5 per side, rank 6 (lowest except able to capture general)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; init
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(init (control p1))
+
+(init (turn 1))
+
+;; initial layout should be random but we'll use a fixed one for now
+(init (piece red   s 1 1 nobody hidden))
+(init (piece black g 2 1 nobody hidden))
+(init (piece red   a 3 1 nobody hidden))
+(init (piece black s 4 1 nobody hidden))
+(init (piece red   s 5 1 nobody hidden))
+(init (piece black r 6 1 nobody hidden))
+(init (piece black h 7 1 nobody hidden))
+(init (piece black r 8 1 nobody hidden))
+
+(init (piece black s 1 2 nobody hidden))
+(init (piece red   s 2 2 nobody hidden))
+(init (piece red   e 3 2 nobody hidden))
+(init (piece black a 4 2 nobody hidden))
+(init (piece red   s 5 2 nobody hidden))
+(init (piece red   r 6 2 nobody hidden))
+(init (piece red   c 7 2 nobody hidden))
+(init (piece red   s 8 2 nobody hidden))
+
+(init (piece black c 1 3 nobody hidden))
+(init (piece red   h 2 3 nobody hidden))
+(init (piece red   r 3 3 nobody hidden))
+(init (piece black s 4 3 nobody hidden))
+(init (piece red   e 5 3 nobody hidden))
+(init (piece black a 6 3 nobody hidden))
+(init (piece black h 7 3 nobody hidden))
+(init (piece red   a 8 3 nobody hidden))
+
+(init (piece black e 1 4 nobody hidden))
+(init (piece red   c 2 4 nobody hidden))
+(init (piece black s 3 4 nobody hidden))
+(init (piece red   g 4 4 nobody hidden))
+(init (piece black c 5 4 nobody hidden))
+(init (piece black s 6 4 nobody hidden))
+(init (piece red   h 7 4 nobody hidden))
+(init (piece black e 8 4 nobody hidden))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; legal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= (legal ?p (flip ?x ?y))
+	(true (control ?p))
+	(true (piece ?pc ?pt ?x ?y ?o hidden)))
+
+(<= (legal ?p (capture ?x1 ?y1 ?x2 ?y2))
+	(true (control ?p))
+	(true (piece ?c1 ?t1 ?x1 ?y1 ?p showing))
+	(adjacent ?x1 ?y1 ?x2 ?y2)
+	(pieceOwner ?op)
+	(distinct ?p ?op)
+	(distinct ?op nobody)
+	(true (piece ?c2 ?t2 ?x2 ?y2 ?op showing))
+	(canCaptureAdjacent ?t1 ?t2)
+	(distinct ?t1 c))
+
+(<= (legal ?p (capture ?x1 ?y1 ?x2 ?y2))
+	(true (control ?p))
+	(true (piece ?c1 c ?x1 ?y1 ?p showing))
+	(screened ?x1 ?y1 ?x2 ?y2)
+	(pieceOwner ?op)
+	(distinct ?p ?op)
+	(distinct ?op nobody)
+	(true (piece ?c2 ?t2 ?x2 ?y2 ?op showing))) 
+
+(<= (legal ?p (move ?xo ?yo ?xn ?yn))
+	(true (control ?p))
+	(piece ?c ?t ?xo ?yo ?p showing)
+	(adjacent ?xo ?yo ?xn ?yn)
+	(not (piece ?c1 ?t1 ?xn ?yn ?op ?s)))
+
+(<= (legal ?op noop)
+	(true (control ?p))
+	(role ?op)
+	(distinct ?p ?op))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; next
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= (next (piece ?c ?at ?ax ?ay ?p ?s))
+	(turn 1)
+	(does ?p (flip ?x ?y))
+	(piece ?c ?t ?x ?y nobody ?s)
+	(piece ?c ?at ?ax ?ay nobody ?s)
+	(or (distinct ?x ?ax) (distinct ?y ?ay)))
+
+(<= (next (piece ?oc ?at ?ax ?ay ?op ?as))
+	(turn 1)
+	(does ?p (flip ?x ?y))
+	(pieceOwner ?op)
+	(pieceColor ?oc)
+	(piece ?c ?t ?x ?y nobody ?s)
+	(piece ?oc ?at ?ax ?ay nobody ?as)
+	(distinct ?op nobody)
+	(distinct ?op ?p)
+	(distinct ?c ?oc))
+
+(<= (next (piece ?c ?t ?x ?y ?p showing))
+	(turn 1)
+	(does ?p (flip ?x ?y))
+	(piece ?c ?t ?x ?y ?ap hidden))
+
+(<= (next (piece ?c ?t ?x ?y ?ap showing))
+	(turn n)
+	(does ?p (flip ?x ?y))
+	(piece ?c ?t ?x ?y ?ap hidden))
+
+(<= (next (piece ?c ?t ?x2 ?y2 ?p showing))
+	(does ?p (capture ?x1 ?y1 ?x2 ?y2))
+	(piece ?c ?t ?x1 ?y1 ?p showing))
+
+(<= (next (piece ?c ?t ?x2 ?y2 ?p showing))
+	(does ?p (move ?x1 ?y1 ?x2 ?y2))	
+	(piece ?c ?t ?x1 ?y1 ?p showing))
+
+;; try this condensed version of the three following
+;; clauses now that I found out why it wasn't working
+;;(<= (next (piece ?c ?t ?x2 ?y2 ?ap ?s))
+;;	(turn n)
+;;	(piece ?c ?t ?x2 ?y2 ?ap ?s)
+;;	(not (does ?p (move ?x1 ?y1 ?x2 ?y2))	)
+;;	(not (does ?p (capture ?x3 ?y3 ?x2 ?y2)))
+;;	(not (does ?p (flip ?x2 ?y2))))
+
+(<= (next (piece ?c ?t ?x ?y ?p ?s))
+	(turn n)
+	(does ?ap (move ?x1 ?y1 ?x2 ?y2))
+	(piece ?c ?t ?x ?y ?p ?s)
+	(different_cell ?x ?y ?x1 ?y1)
+	(different_cell ?x ?y ?x2 ?y2))
+;;	(or (distinct ?x ?x1) (distinct ?y ?y1))
+;;	(or (distinct ?x ?x2) (distinct ?y ?y2)))
+
+(<= (next (piece ?c ?t ?x ?y ?p ?s))
+	(turn n)
+	(does ?ap (capture ?x1 ?y1 ?x2 ?y2))
+	(piece ?c ?t ?x ?y ?p ?s)
+	(different_cell ?x ?y ?x1 ?y1)
+	(different_cell ?x ?y ?x2 ?y2))
+;;	(or (distinct ?x ?x1) (distinct ?y ?y1))
+;;	(or (distinct ?x ?x2) (distinct ?y ?y2)))
+
+(<= (next (piece ?c ?t ?x ?y ?p ?s))
+	(turn n)
+	(does ?ap (flip ?x1 ?y1))
+	(piece ?c ?t ?x ?y ?p ?s)
+	(different_cell ?x ?y ?x1 ?y1))
+;;	(or (distinct ?x ?x1) (distinct ?y ?y1))
+
+;; don't need to count past turn 3
+(<= (next (turn n))
+	(true (turn 1)))
+
+(<= (next (turn n))
+	(true (turn n)))
+
+(<= (next (control ?op))
+		(true (control ?p))
+		(role ?op)
+		(distinct ?p ?op))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; game specific auxiliary predicates
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; canCaptureAdjacent
+(canCaptureAdjacent g g)
+(canCaptureAdjacent g a)
+(canCaptureAdjacent g e)
+(canCaptureAdjacent g r)
+(canCaptureAdjacent g h)
+(canCaptureAdjacent g c)
+
+(canCaptureAdjacent a a)
+(canCaptureAdjacent a e)
+(canCaptureAdjacent a r)
+(canCaptureAdjacent a h)
+(canCaptureAdjacent a s)
+(canCaptureAdjacent a c)
+
+(canCaptureAdjacent e e)
+(canCaptureAdjacent e r)
+(canCaptureAdjacent e h)
+(canCaptureAdjacent e s)
+(canCaptureAdjacent e c)
+
+(canCaptureAdjacent r r)
+(canCaptureAdjacent r h)
+(canCaptureAdjacent r s)
+(canCaptureAdjacent r c)
+
+(canCaptureAdjacent h h)
+(canCaptureAdjacent h s)
+(canCaptureAdjacent h c)
+
+(canCaptureAdjacent s s)
+(canCaptureAdjacent s g)
+
+	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; general auxiliary predicates
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(<= (adjacent ?x1 ?y1 ?x2 ?y1)
+	(or (next_x ?x1 ?x2) (next_x ?x2 ?x1)))
+
+(<= (adjacent ?x1 ?y1 ?x1 ?y2)
+	(or (next_y ?y1 ?y2) (next_y ?y2 ?y1)))
+
+(<= (different_cell ?x1 ?y1 ?x1 ?y2)
+	(distinct ?y1 ?y2)
+	(index_y ?y2))
+
+(<= (different_cell ?x1 ?y1 ?x2 ?y1)
+	(distinct ?x1 ?x2)
+	(index_x ?x2))
+
+(<= (different_cell ?x1 ?y1 ?x2 ?y2)
+	(distinct ?x1 ?x2)
+	(distinct ?y1 ?y2)
+	(index_x ?x2)
+	(index_y ?y2))
+
+(<= (screened ?x1 ?y1 ?x1 ?y2)
+	(screened ?x1 ?y1 ?x1 ?y2 up))
+
+(<= (screened ?x1 ?y1 ?x1 ?y2)
+	(screened ?x1 ?y1 ?x1 ?y2 down))
+
+(<= (screened ?x1 ?y1 ?x2 ?y1)
+	(screened ?x1 ?y1 ?x2 ?y1 right))
+
+(<= (screened ?x1 ?y1 ?x2 ?y1)
+	(screened ?x1 ?y1 ?x2 ?y1 left))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 up)
+	(next_y ?y1 ?y2)
+	(piece ?c ?t ?x1 ?y2 ?o ?s)
+	(screened_1 ?x1 ?y2 ?x1 ?y3 up))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 up)
+	(next_y ?y1 ?y2)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened ?x1 ?y2 ?x1 ?y3 up))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y2 up)
+	(next_y ?y1 ?y2)
+	(piece ?c ?t ?x1 ?y2 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y3 up)
+	(next_y ?y1 ?y2)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened_1 ?x1 ?y2 ?x1 ?y3 up))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 down)
+	(next_y ?y2 ?y1)
+	(piece ?c ?t ?x1 ?y2 ?o ?s)
+	(screened_1 ?x1 ?y2 ?x1 ?y3 down))
+
+(<= (screened ?x1 ?y1 ?x1 ?y3 down)
+	(next_y ?y2 ?y1)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened ?x1 ?y2 ?x1 ?y3 down))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y2 down)
+	(next_y ?y2 ?y1)
+	(piece ?c ?t ?x1 ?y2 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x1 ?y3 down)
+	(next_y ?y2 ?y1)
+	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(screened_1 ?x1 ?y2 ?x1 ?y3 down))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 right)
+	(next_x ?x1 ?x2)
+	(piece ?c ?t ?x2 ?y1 ?o ?s)
+	(screened_1 ?x2 ?y1 ?x3 ?y1 right))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 right)
+	(next_x ?x1 ?x2)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened ?x2 ?y1 ?x3 ?y1 right))
+
+(<= (screened_1 ?x1 ?y1 ?x2 ?y1 right)
+	(next_x ?x1 ?x2)
+	(piece ?c ?t ?x2 ?y1 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x3 ?y1 right)
+	(next_x ?x1 ?x2)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened_1 ?x2 ?y1 ?x3 ?y1 right))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 left)
+	(next_x ?x2 ?x1)
+	(piece ?c ?t ?x2 ?y1 ?o ?s)
+	(screened_1 ?x2 ?y1 ?x3 ?y1 left))
+
+(<= (screened ?x1 ?y1 ?x3 ?y1 left)
+	(next_x ?x2 ?x1)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened ?x2 ?y1 ?x3 ?y1 left))
+
+(<= (screened_1 ?x1 ?y1 ?x2 ?y1 left)
+	(next_x ?x2 ?x1)
+	(piece ?c ?t ?x2 ?y1 ?o ?s))
+
+(<= (screened_1 ?x1 ?y1 ?x3 ?y1 left)
+	(next_x ?x2 ?x1)
+	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(screened_1 ?x2 ?y1 ?x3 ?y1 left))
+
+
+	
+
+(next_x 1 2)
+(next_x 2 3)		
+(next_x 3 4)	
+(next_x 4 5)
+(next_x 5 6)
+(next_x 6 7)
+(next_x 7 8)
+
+(next_y 1 2)
+(next_y 2 3)		
+(next_y 3 4)	
+
+
+
+
