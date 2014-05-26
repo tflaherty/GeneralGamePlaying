@@ -12,12 +12,17 @@ namespace API.GGP.GeneralGamePlayerNS
 {
     public class FirstDarkChessPlayer : GeneralGamePlayerBase
     {
+#if (WIN64)
+        private const string ExtraLevelIfNeeded = "\\..";
+#else
+        private const string ExtraLevelIfNeeded = "";
+#endif
         public FirstDarkChessPlayer(string role, string wcfSvcHostExePath, string tempFilePath) 
             : base(role, wcfSvcHostExePath, tempFilePath)
         {
             var darkChessPath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(
                 System.IO.Path.GetDirectoryName(new Uri(
-                System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).LocalPath)))) + "\\PrologEngine\\Prolog Files\\DarkChess.pl";
+                System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).LocalPath)))) + ExtraLevelIfNeeded + "\\PrologEngine\\Prolog Files\\DarkChess.pl";
 
             darkChessPath = darkChessPath.Replace("\\", "/");
             darkChessPath = darkChessPath.Replace("file:/", "");
@@ -26,7 +31,7 @@ namespace API.GGP.GeneralGamePlayerNS
 
             var alphaBetaPath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(
                 System.IO.Path.GetDirectoryName(new Uri(
-                System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).LocalPath)))) + "\\PrologEngine\\Prolog Files\\AlphaBeta.pl";
+                System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).LocalPath)))) + ExtraLevelIfNeeded + "\\PrologEngine\\Prolog Files\\AlphaBeta.pl";
 
             alphaBetaPath = alphaBetaPath.Replace("\\", "/");
             alphaBetaPath = alphaBetaPath.Replace("file:/", "");
@@ -47,18 +52,21 @@ namespace API.GGP.GeneralGamePlayerNS
             //string clauseDump = this.GetPrologEngine().ListAllFacts();
             //DebugAndTraceHelper.WriteTraceLine(clauseDump, Role);
 
-            Move nextMove;
+            Move nextMove = null;
             var legalMovesWithEval = TheGeneralGame.FindLegalsWithEval(Role);
             int? maxEval = legalMovesWithEval.Max(n => n.Tag as int?);
             int? minEval = legalMovesWithEval.Min(n => n.Tag as int?);
 
-            if (maxEval != minEval)
+            if (legalMovesWithEval.Any())
             {
-                nextMove = legalMovesWithEval.Where(n => n.Tag as int? == maxEval.Value).First();                
-            }
-            else
-            {
-                nextMove = TheGeneralGame.FindRandomLegal(Role);
+                if (maxEval != minEval)
+                {
+                    nextMove = legalMovesWithEval.Where(n => n.Tag as int? == maxEval.Value).First();
+                }
+                else
+                {
+                    nextMove = TheGeneralGame.FindRandomLegal(Role);
+                }                
             }
 
             if (nextMove != null)

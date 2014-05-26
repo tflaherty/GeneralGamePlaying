@@ -183,6 +183,9 @@ namespace API.SWIProlog.Engine
                 var xmlprotestPath = localCodeBasePath + "\\..\\PrologEngine\\Prolog Files\\xmlprotest.pl";
 */
                 var codeBasePath = new Uri(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase).LocalPath;
+#if (WIN64)
+                codeBasePath = Path.GetDirectoryName(codeBasePath);
+#endif
                 codeBasePath = Path.GetDirectoryName(codeBasePath);
                 codeBasePath = Path.GetDirectoryName(codeBasePath);
                 codeBasePath = Path.GetDirectoryName(codeBasePath);
@@ -217,7 +220,11 @@ namespace API.SWIProlog.Engine
         // is set to "Copy always" to ensure both files are available for WcfSvcHost
         protected void StartWCFService1()
         {
-            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologServiceLibrary/bin/debug/SWIPrologServiceLibrary.dll /config:../../../SWIPrologServiceLibrary/bin/debug/App.Config");
+#if (WIN64)
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../../SWIPrologServiceLibrary/bin/x64/Debug/SWIPrologServiceLibrary.dll /config:../../../../SWIPrologServiceLibrary/bin/x64/Debug/App.Config");
+#else
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologServiceLibrary/bin/Debug/SWIPrologServiceLibrary.dll /config:../../../SWIPrologServiceLibrary/bin/Debug/App.Config");
+#endif
             if (newProcess != null)
             {
                 processesStarted.Add(newProcess);
@@ -226,7 +233,11 @@ namespace API.SWIProlog.Engine
 
         protected void StartWCFService2()
         {
-            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologService2Library/bin/debug/SWIPrologService2Library.dll /config:../../../SWIPrologService2Library/bin/debug/App.Config");
+#if (WIN64)
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../../SWIPrologService2Library/bin/x64/Debug/SWIPrologService2Library.dll /config:../../../../SWIPrologService2Library/bin/x64/Debug/App.Config");
+#else
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologService2Library/bin/Debug/SWIPrologService2Library.dll /config:../../../SWIPrologService2Library/bin/Debug/App.Config");
+#endif
             if (newProcess != null)
             {
                 processesStarted.Add(newProcess);
@@ -235,7 +246,11 @@ namespace API.SWIProlog.Engine
 
         protected void StartWCFService3()
         {
-            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologService3Library/bin/debug/SWIPrologService3Library.dll /config:../../../SWIPrologService3Library/bin/debug/App.Config");
+#if (WIN64)
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../../SWIPrologService3Library/bin/x64/Debug/SWIPrologService3Library.dll /config:../../../../SWIPrologService3Library/bin/x64/Debug/App.Config");
+#else
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologService3Library/bin/Debug/SWIPrologService3Library.dll /config:../../../SWIPrologService3Library/bin/Debug/App.Config");
+#endif
             if (newProcess != null)
             {
                 processesStarted.Add(newProcess);
@@ -244,16 +259,35 @@ namespace API.SWIProlog.Engine
 
         protected void StartWCFService4()
         {
-            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologService4Library/bin/debug/SWIPrologService4Library.dll /config:../../../SWIPrologService4Library/bin/debug/App.Config");
+#if (WIN64)
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../../SWIPrologService4Library/bin/x64/debug/SWIPrologService4Library.dll /config:../../../../SWIPrologService4Library/bin/x64/debug/App.Config");
+#else
+            Process newProcess = Process.Start(WcfSvcHostExePath, @"/service:../../../SWIPrologService4Library/bin/Debug/SWIPrologService4Library.dll /config:../../../SWIPrologService4Library/bin/Debug/App.Config");
+#endif
             if (newProcess != null)
             {
                 processesStarted.Add(newProcess);
             }
         }
 
+        public static string CleanUpExistingPrologClauseForAsserting(string clause)
+        {
+            // for a reason I have yet to investigate sometimes a clause needs to have a 
+            // set of parentheses around it before it is asserted
+            var lastPeriod = clause.LastIndexOf('.');
+            if (lastPeriod != -1)
+            {
+                return "(" + clause.Remove(clause.LastIndexOf('.'), 1).Trim() + ")";
+            }
+            else
+            {
+                return "(" + clause.Trim() + ")";
+            }
+        }
+
         public bool Assert(string clause)
         {
-            return swiPrologServiceClient.ExecuteClause("assert(" + clause + ").");
+            return swiPrologServiceClient.ExecuteClause("assert(" + clause + ").");                
         }
 
         public bool DeclareDynamic(string predicate, int arity)
@@ -281,6 +315,12 @@ namespace API.SWIProlog.Engine
         public void Reset()
         {
             //DebugAndTraceHelper.WriteTraceLineToAllChannels("Must implement PrologEngine.Reset()!!");    
+            var currentEngineClauses = ListAll(false).Split(new char[] { '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            foreach (string currentEngineClause in currentEngineClauses)
+            {
+                var foo = PrologEngine.CleanUpExistingPrologClauseForAsserting(currentEngineClause);
+                Retract(PrologEngine.CleanUpExistingPrologClauseForAsserting(currentEngineClause), false);
+            }
         }
 
         public void Dispose()

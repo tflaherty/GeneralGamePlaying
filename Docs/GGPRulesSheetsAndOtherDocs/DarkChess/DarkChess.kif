@@ -178,7 +178,7 @@
 	(pieceToPlace ?c ?t ?id)
 	(index_x ?x)
 	(index_y ?y)
-	(not (piece ?c1 ?t1 ?x ?y ?o ?s)))
+	(not (isThereAPieceAt ?x ?y)))
 
 (<= (legal ?p (flip ?x ?y))
 	(or (turn 1) (turn n))
@@ -209,7 +209,7 @@
 	(true (control ?p))
 	(piece ?c ?t ?xo ?yo ?p showing)
 	(adjacent ?xo ?yo ?xn ?yn)
-	(not (piece ?c1 ?t1 ?xn ?yn ?op ?s)))
+	(not (isThereAPieceAt ?xn ?yn)))
 
 (<= (legal ?op noop)
 	(true (control ?p))
@@ -375,18 +375,13 @@
 
 (<= (goal ?p 0)
 	(control ?p)
-	(not (legal ?p (move ?x1 ?y1 ?x2 ?y2)))
-	(not (legal ?p (capture ?x1 ?y1 ?x2 ?y2)))
-	(not (legal ?p (flip ?x1 ?y1))))
+	(not (hasALegalMove ?p)))
 
 (<= (goal ?p 100)
 	(role ?p)
 	(control ?op)
 	(distinct ?p ?op)
-	(not (legal ?op (move ?x1 ?y1 ?x2 ?y2)))
-	(not (legal ?op (capture ?x1 ?y1 ?x2 ?y2)))
-	(not (legal ?op (flip ?x1 ?y1))))
-
+	(not (hasALegalMove ?op)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; terminal
@@ -395,10 +390,7 @@
 (<= terminal
 	(turn n)
 	(control ?p)
-	(not (legal ?p (move ?x1 ?y1 ?x2 ?y2)))
-	(not (legal ?p (capture ?x1 ?y1 ?x2 ?y2)))
-	(not (legal ?p (flip ?x1 ?y1))))
-
+	(not (hasALegalMove ?p)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; game specific auxiliary predicates
@@ -439,7 +431,17 @@
 (<= (hasAnyPieceToPlaceOtherThan ?id)
 	(pieceToPlace ?c ?t ?oid)
 	(distinct ?id ?oid))
-	
+
+(<= (isThereAPieceAt ?x ?y)
+	(piece ?c ?t ?x ?y ?o ?s))
+
+(<= (hasALegalMove ?p)
+	(distinct ?p random)
+	(or (legal ?p (move ?x1 ?y1 ?x2 ?y2))  (or (legal ?p (capture ?x3 ?y3 ?x4 ?y4)) (legal ?p (flip ?x5 ?y5)))))
+
+(<= (hasALegalMove random)
+	(turn piecePlacement))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; general auxiliary predicates
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -489,7 +491,7 @@
 
 (<= (screened ?x1 ?y1 ?x1 ?y3 up)
 	(next_y ?y1 ?y2)
-	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(not (isThereAPieceAt ?x1 ?y2))
 	(screened ?x1 ?y2 ?x1 ?y3 up))
 
 (<= (screened_1 ?x1 ?y1 ?x1 ?y2 up)
@@ -498,7 +500,7 @@
 
 (<= (screened_1 ?x1 ?y1 ?x1 ?y3 up)
 	(next_y ?y1 ?y2)
-	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(not (isThereAPieceAt ?x1 ?y2))
 	(screened_1 ?x1 ?y2 ?x1 ?y3 up))
 
 (<= (screened ?x1 ?y1 ?x1 ?y3 down)
@@ -508,7 +510,7 @@
 
 (<= (screened ?x1 ?y1 ?x1 ?y3 down)
 	(next_y ?y2 ?y1)
-	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(not (isThereAPieceAt ?x1 ?y2))
 	(screened ?x1 ?y2 ?x1 ?y3 down))
 
 (<= (screened_1 ?x1 ?y1 ?x1 ?y2 down)
@@ -517,7 +519,7 @@
 
 (<= (screened_1 ?x1 ?y1 ?x1 ?y3 down)
 	(next_y ?y2 ?y1)
-	(not(piece ?c ?t ?x1 ?y2 ?o ?s))
+	(not (isThereAPieceAt ?x1 ?y2))
 	(screened_1 ?x1 ?y2 ?x1 ?y3 down))
 
 (<= (screened ?x1 ?y1 ?x3 ?y1 right)
@@ -527,7 +529,7 @@
 
 (<= (screened ?x1 ?y1 ?x3 ?y1 right)
 	(next_x ?x1 ?x2)
-	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(not (isThereAPieceAt ?x2 ?y1))
 	(screened ?x2 ?y1 ?x3 ?y1 right))
 
 (<= (screened_1 ?x1 ?y1 ?x2 ?y1 right)
@@ -536,7 +538,7 @@
 
 (<= (screened_1 ?x1 ?y1 ?x3 ?y1 right)
 	(next_x ?x1 ?x2)
-	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(not (isThereAPieceAt ?x2 ?y1))
 	(screened_1 ?x2 ?y1 ?x3 ?y1 right))
 
 (<= (screened ?x1 ?y1 ?x3 ?y1 left)
@@ -546,7 +548,7 @@
 
 (<= (screened ?x1 ?y1 ?x3 ?y1 left)
 	(next_x ?x2 ?x1)
-	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(not (isThereAPieceAt ?x2 ?y1))
 	(screened ?x2 ?y1 ?x3 ?y1 left))
 
 (<= (screened_1 ?x1 ?y1 ?x2 ?y1 left)
@@ -555,7 +557,7 @@
 
 (<= (screened_1 ?x1 ?y1 ?x3 ?y1 left)
 	(next_x ?x2 ?x1)
-	(not(piece ?c ?t ?x2 ?y1 ?o ?s))
+	(not (isThereAPieceAt ?x1 ?y2))
 	(screened_1 ?x2 ?y1 ?x3 ?y1 left))
 
 

@@ -14,6 +14,7 @@ using API.GGP.GeneralGameNS;
 using API.GGP.GeneralGamePlayerNS;
 using API.GGP.GGPInterfacesNS;
 using API.GGP.PredicateLogic;
+using API.SWIProlog.Engine;
 using API.UtilitiesAndExtensions;
 using API.UtilitiesAndExtensions;
 
@@ -25,7 +26,7 @@ namespace API.GGP.GeneralGameManagerNS
     {
         public string GameStateAsHTML;
         public string GameStateAsXML;
-        public string GameStateFromProlog;
+        public List<string> GameStateFromProlog= new List<string>();
     }
 
     [Serializable]
@@ -134,6 +135,7 @@ namespace API.GGP.GeneralGameManagerNS
         public bool PlayFromHistoryFile(string filePath)
         {
             int currentTurnIndex = 0;
+            int previousTurnIndex;
 
             IFormatter formatter = new BinaryFormatter();
             using (FileStream s = File.OpenRead(filePath))
@@ -193,6 +195,7 @@ namespace API.GGP.GeneralGameManagerNS
                     goForward = true;
                 }
 
+                previousTurnIndex = currentTurnIndex;
                 if (goForward.Value)
                 {
                     currentTurnIndex = Math.Min(currentTurnIndex + 1, TurnRecords.Max(n => n.Turn));
@@ -200,6 +203,16 @@ namespace API.GGP.GeneralGameManagerNS
                 else
                 {
                     currentTurnIndex = Math.Max(currentTurnIndex - 1, 0);
+                }
+
+                if (currentTurnIndex != previousTurnIndex)
+                {
+                    TheGeneralGame.PrologEngine.Reset();
+                    foreach (string gameStateLine in TurnRecords[currentTurnIndex].GameState.GameStateFromProlog)
+                    {
+                        var foo = PrologEngine.CleanUpExistingPrologClauseForAsserting(gameStateLine);
+                        TheGeneralGame.PrologEngine.Assert(PrologEngine.CleanUpExistingPrologClauseForAsserting(gameStateLine));
+                    }                    
                 }
             }
 
@@ -274,6 +287,8 @@ namespace API.GGP.GeneralGameManagerNS
                     TurnRecord thisTurnRecord = new TurnRecord();
                     thisTurnRecord.Turn = TheGeneralGame.CurrentTurn;
                     thisTurnRecord.GameState.GameStateAsXML = stateAsXML;
+                    thisTurnRecord.GameState.GameStateFromProlog =
+                        TheGeneralGame.PrologEngine.ListAll(sortAlphabetically: false).Split(new char[] {'\n'}, StringSplitOptions.RemoveEmptyEntries).ToList();
                     thisTurnRecord.Moves = nextMoves;
                     //thisTurnRecord.GameState.GameStateAsHTML = ieWebBrowserListener == null ? "" : ieWebBrowserListener.ieWebBrowser.DocumentText;
                     thisTurnRecord.IsTerminalState = gameHasTerminated;

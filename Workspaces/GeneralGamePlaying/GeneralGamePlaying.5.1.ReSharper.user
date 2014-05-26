@@ -9,68 +9,67 @@
   </SettingsComponent>
   <RecentFiles>
     <RecentFiles>
-      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:App.config" caret="0" fromTop="0" />
-      <File id="77137C9A-446D-4AC1-B7BE-C058680746D0/f:App.config" caret="1564" fromTop="35" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/d:Properties/f:Settings.settings" caret="820" fromTop="11" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:app.config" caret="3229" fromTop="31" />
-      <File id="5A7B3547-2665-4AF6-80A9-4EB6F0E03274/f:App.config" caret="712" fromTop="8" />
-      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:App.config" caret="1707" fromTop="28" />
       <File id="5A7B3547-2665-4AF6-80A9-4EB6F0E03274/f:SWIPrologService3.cs" caret="784" fromTop="20" />
       <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:SWIPrologService4.cs" caret="987" fromTop="19" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.resx" caret="8780" fromTop="48" />
-      <File id="9EAC087C-237B-47A7-930B-0106652E5CA8/f:KIFParserUngerParallel.cs" caret="16440" fromTop="35" />
-      <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Utilities.cs" caret="1722" fromTop="45" />
       <File id="B8C632A6-4AA4-47BA-9030-BDA5809EFA5F/f:IGeneralGame.cs" caret="860" fromTop="23" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.Designer.cs" caret="455" fromTop="13" />
-      <File id="7E127119-B6E4-49D6-8E17-80F9CCD19164/f:Clause.cs" caret="4397" fromTop="28" />
-      <File id="E274C0D3-787F-4BA1-8CD9-F46DAEA2100E/f:Form1.cs" caret="336" fromTop="15" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="286" fromTop="11" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.Designer.cs" caret="461" fromTop="13" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:TypeDef.cs" caret="525" fromTop="28" />
       <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Extensions.cs" caret="508" fromTop="16" />
-      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:ISWIPrologService.cs" caret="132" fromTop="4" />
-      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:SWIPrologService.cs" caret="766" fromTop="20" />
       <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:GeneralGamePlayerBase.cs" caret="836" fromTop="24" />
-      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="460" fromTop="15" />
-      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstGeneralGamePlayer.cs" caret="423" fromTop="15" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="1974" fromTop="28" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Settings.cs" caret="0" fromTop="0" />
       <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/d:Properties/f:Settings.Designer.cs" caret="1819" fromTop="20" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="18651" fromTop="12" />
-      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="2773" fromTop="28" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="1453" fromTop="24" />
+      <File id="BF78D748-A618-40E4-9037-E8350B327436/f:TFStreamTokenizer.cs" caret="57351" fromTop="11" />
+      <File id="9EAC087C-237B-47A7-930B-0106652E5CA8/f:KIFParserUngerParallel.cs" caret="12211" fromTop="11" />
+      <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Utilities.cs" caret="1722" fromTop="45" />
+      <File id="E274C0D3-787F-4BA1-8CD9-F46DAEA2100E/f:Form1.cs" caret="336" fromTop="15" />
+      <File id="7E127119-B6E4-49D6-8E17-80F9CCD19164/f:Clause.cs" caret="543" fromTop="0" />
+      <File id="d:Miscellaneous Files/f:DarkChess.pl/l:D!?AI?Workspaces?GeneralGamePlaying?PrologEngine?Prolog Files?DarkChess.pl" caret="226" fromTop="9" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstGeneralGamePlayer.cs" caret="276" fromTop="9" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Program.cs" caret="836" fromTop="12" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="276" fromTop="9" />
+      <File id="d:Miscellaneous Files/f:DarkChess.kif/l:D!?AI?Docs?GGPRulesSheetsAndOtherDocs?DarkChess?DarkChess.kif" caret="17279" fromTop="9" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.Designer.cs" caret="7289" fromTop="24" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="2314" fromTop="14" />
+      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:ISWIPrologService.cs" caret="569" fromTop="15" />
+      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:SWIPrologService.cs" caret="779" fromTop="16" />
+      <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:DebugAndTraceHelper.cs" caret="20422" fromTop="18" />
+      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="28434" fromTop="20" />
+      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="18167" fromTop="10" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14574" fromTop="21" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="8867" fromTop="4" />
     </RecentFiles>
     <RecentEdits>
-      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:App.config" caret="1804" fromTop="29" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="4653" fromTop="19" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="5924" fromTop="46" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14512" fromTop="26" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14849" fromTop="37" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14641" fromTop="31" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="15273" fromTop="52" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="11858" fromTop="30" />
-      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:SWIPrologService4.cs" caret="1269" fromTop="28" />
-      <File id="B5C68AAF-0069-4E63-988C-8920851B3DA7/f:SWIPrologService4.cs" caret="1433" fromTop="32" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="12312" fromTop="44" />
-      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:SWIPrologService.cs" caret="2560" fromTop="24" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="2611" fromTop="28" />
-      <File id="B8C632A6-4AA4-47BA-9030-BDA5809EFA5F/f:IGeneralGame.cs" caret="932" fromTop="30" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="2303" fromTop="24" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="28516" fromTop="24" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="24892" fromTop="10" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="13723" fromTop="32" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="25795" fromTop="22" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="19813" fromTop="40" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="1833" fromTop="19" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="8780" fromTop="19" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:Form1.cs" caret="25277" fromTop="26" />
-      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="3410" fromTop="28" />
-      <File id="300BAB3C-CD67-40A1-9575-C159494DEF41/f:PrologQuery.cs" caret="286" fromTop="11" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="14727" fromTop="43" />
-      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="14497" fromTop="39" />
-      <File id="90F2C2AE-5572-44AC-B41C-7F5830679DAC/f:Extensions.cs" caret="90" fromTop="4" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="895" fromTop="26" />
-      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="3229" fromTop="19" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="10165" fromTop="19" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="10822" fromTop="25" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="11483" fromTop="24" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="12144" fromTop="20" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="8341" fromTop="18" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="939" fromTop="14" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="1461" fromTop="22" />
+      <File id="B6F52BE9-ACF5-459A-8287-20C7D865C39C/f:FirstDarkChessPlayer.cs" caret="478" fromTop="15" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="814" fromTop="18" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="13279" fromTop="13" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="13297" fromTop="18" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="9555" fromTop="14" />
+      <File id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" caret="11614" fromTop="12" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="13275" fromTop="21" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="13196" fromTop="16" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="13011" fromTop="6" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="13092" fromTop="10" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="12822" fromTop="4" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="13718" fromTop="14" />
+      <File id="47B20024-2CCE-4DA1-819D-F9346233DF08/f:SWIPrologService.cs" caret="879" fromTop="19" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="8612" fromTop="8" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="6085" fromTop="4" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="8612" fromTop="1" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="9063" fromTop="19" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="1990" fromTop="5" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="9063" fromTop="19" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="9387" fromTop="22" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14284" fromTop="17" />
+      <File id="C9F924D3-875D-4DDD-AF6C-3C0B1AC29902/f:PrologEngine.cs" caret="14574" fromTop="21" />
+      <File id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" caret="9063" fromTop="11" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
@@ -86,14 +85,14 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="interface" priority="2" />
-      <Item value="string" priority="156" />
+      <Item value="string" priority="162" />
       <Item value="IEnumerable" priority="21" />
-      <Item value="int" priority="63" />
+      <Item value="int" priority="65" />
       <Item value="using" priority="14" />
-      <Item value="String`0" priority="33" />
+      <Item value="String`0" priority="34" />
       <Item value="System" priority="22" />
       <Item value="MatchId" priority="3" />
-      <Item value="public" priority="140" />
+      <Item value="public" priority="142" />
       <Item value="List" priority="44" />
       <Item value="GeneralGameManager" priority="36" />
       <Item value="GeneralGameManager`0" priority="1" />
@@ -104,27 +103,27 @@
       <Item value="class" priority="9" />
       <Item value="IGeneralGame`0" priority="5" />
       <Item value="GeneralGame" priority="2" />
-      <Item value="bool" priority="32" />
-      <Item value="TheGeneralGame" priority="35" />
-      <Item value="new" priority="218" />
+      <Item value="bool" priority="33" />
+      <Item value="TheGeneralGame" priority="41" />
+      <Item value="new" priority="223" />
       <Item value="for" priority="14" />
       <Item value="Players" priority="2" />
       <Item value="List&lt;IGeneralGamePlayer&gt;" priority="0" />
-      <Item value="var" priority="167" />
+      <Item value="var" priority="169" />
       <Item value="IGeneralGamePlayer`0" priority="0" />
       <Item value="FirstGeneralGamePlayer`0" priority="3" />
       <Item value="newPlayer" priority="3" />
-      <Item value="foreach" priority="73" />
+      <Item value="foreach" priority="75" />
       <Item value="foo" priority="16" />
       <Item value="Task`0" priority="9" />
       <Item value="List&lt;Task&lt;string&gt;&gt;" priority="0" />
       <Item value="tasks" priority="8" />
       <Item value="newTask" priority="3" />
-      <Item value="try" priority="18" />
+      <Item value="try" priority="19" />
       <Item value="catch" priority="1" />
       <Item value="AggregateException`0" priority="0" />
       <Item value="ex" priority="5" />
-      <Item value="if" priority="160" />
+      <Item value="if" priority="166" />
       <Item value="task" priority="1" />
       <Item value="n" priority="46" />
       <Item value="static" priority="24" />
@@ -204,11 +203,11 @@
       <Item value="GameDescriptionHornClauseClassificationsNames" priority="0" />
       <Item value="Contains`1" priority="0" />
       <Item value="hornClause" priority="15" />
-      <Item value="else" priority="58" />
+      <Item value="else" priority="60" />
       <Item value="ClassifiedHornClauses" priority="7" />
       <Item value="List&lt;HornClause&gt;" priority="0" />
       <Item value="GameDescriptionHornClauseClassifications`0" priority="3" />
-      <Item value="ToList`1" priority="1" />
+      <Item value="ToList`1" priority="2" />
       <Item value="node" priority="2" />
       <Item value="Atom`0" priority="10" />
       <Item value="OperationCanceledException`0" priority="1" />
@@ -247,7 +246,7 @@
       <Item value="txb_Query" priority="4" />
       <Item value="txb_QueryResults" priority="5" />
       <Item value="solution" priority="6" />
-      <Item value="Environment`0" priority="3" />
+      <Item value="Environment`0" priority="4" />
       <Item value="dialog" priority="0" />
       <Item value="Name" priority="0" />
       <Item value="kifFilePath" priority="11" />
@@ -263,7 +262,7 @@
       <Item value="MessageBox`0" priority="3" />
       <Item value="owner" priority="0" />
       <Item value="IWin32Window`0" priority="0" />
-      <Item value="List&lt;string&gt;" priority="5" />
+      <Item value="List&lt;string&gt;" priority="6" />
       <Item value="predefinedClauseCount" priority="0" />
       <Item value="x" priority="0" />
       <Item value="KIFParserUngerParallel`0" priority="3" />
@@ -297,8 +296,8 @@
       <Item value="GameDescription" priority="0" />
       <Item value="KIFString" priority="0" />
       <Item value="nilMoveString" priority="0" />
-      <Item value="StringBuilder`0" priority="9" />
-      <Item value="sb" priority="50" />
+      <Item value="StringBuilder`0" priority="10" />
+      <Item value="sb" priority="52" />
       <Item value="hornClauseList" priority="2" />
       <Item value="Roles" priority="2" />
       <Item value="roleHornClause" priority="0" />
@@ -378,7 +377,7 @@
       <Item value="parenNextLevel" priority="1" />
       <Item value="pos" priority="8" />
       <Item value="tmpString" priority="6" />
-      <Item value="char" priority="2" />
+      <Item value="char" priority="4" />
       <Item value="parenNestLevel" priority="1" />
       <Item value="moveStartPos" priority="9" />
       <Item value="prefixSeparator" priority="0" />
@@ -481,10 +480,10 @@
       <Item value="PlMtEngine" priority="1" />
       <Item value="PlMtEngine`0" priority="0" />
       <Item value="SwiPlCs" priority="1" />
-      <Item value="PlQuery`0" priority="1" />
+      <Item value="PlQuery`0" priority="2" />
       <Item value="PlQuery" priority="0" />
       <Item value="query1" priority="0" />
-      <Item value="PlEngine`0" priority="5" />
+      <Item value="PlEngine`0" priority="6" />
       <Item value="OperationContract" priority="5" />
       <Item value="ServiceReference1" priority="8" />
       <Item value="IPrologService`0" priority="1" />
@@ -495,7 +494,7 @@
       <Item value="q" priority="4" />
       <Item value="PlTermV`0" priority="2" />
       <Item value="PlQueryVariables`0" priority="4" />
-      <Item value="clause" priority="14" />
+      <Item value="clause" priority="19" />
       <Item value="plQueryVariablese" priority="4" />
       <Item value="yield break" priority="0" />
       <Item value="yield return" priority="0" />
@@ -537,7 +536,7 @@
       <Item value="solutionVariable" priority="5" />
       <Item value="myLock" priority="0" />
       <Item value="GetSolutionVariables`0" priority="1" />
-      <Item value="StringBuilder" priority="1" />
+      <Item value="StringBuilder" priority="2" />
       <Item value="tmp" priority="9" />
       <Item value="firstArgument" priority="2" />
       <Item value="functorToRemove" priority="0" />
@@ -599,7 +598,7 @@
       <Item value="formatter" priority="0" />
       <Item value="clauses" priority="1" />
       <Item value="binFilePath" priority="2" />
-      <Item value="sortAlphabetically" priority="2" />
+      <Item value="sortAlphabetically" priority="3" />
       <Item value="MdiChildren" priority="0" />
       <Item value="Form`0" priority="1" />
       <Item value="MdiParent" priority="1" />
@@ -796,17 +795,17 @@
       <Item value="_TempFilePath" priority="5" />
       <Item value="WcfSvcHostExePath" priority="2" />
       <Item value="GeneralGamePlayingNS" priority="0" />
-      <Item value="SWIProlog" priority="8" />
+      <Item value="SWIProlog" priority="9" />
       <Item value="GGPInterfaces" priority="0" />
       <Item value="SWIProlog.Engine" priority="0" />
       <Item value="GGPInterfacesNS" priority="0" />
       <Item value="List&lt;TurnRecord&gt;" priority="0" />
       <Item value="GameState`0" priority="0" />
       <Item value="TurnRecord`0" priority="2" />
-      <Item value="thisTurnRecord" priority="14" />
+      <Item value="thisTurnRecord" priority="15" />
       <Item value="CurrentTurn" priority="1" />
       <Item value="finally" priority="0" />
-      <Item value="TurnRecords" priority="9" />
+      <Item value="TurnRecords" priority="10" />
       <Item value="TurnRecord" priority="0" />
       <Item value="List&lt;int&gt;" priority="0" />
       <Item value="GetHashCode`0" priority="0" />
@@ -814,7 +813,7 @@
       <Item value="GameState" priority="0" />
       <Item value="DebuggerTypeProxyAttribute`0" priority="0" />
       <Item value="historyFileName" priority="2" />
-      <Item value="currentTurnIndex" priority="6" />
+      <Item value="currentTurnIndex" priority="11" />
       <Item value="initialTurnRecord" priority="0" />
       <Item value="ieWebBrowserListener" priority="1" />
       <Item value="MaskInputRejectedEventArgs`0" priority="0" />
@@ -835,7 +834,7 @@
       <Item value="needToStartService" priority="5" />
       <Item value="KillAllPrologEngineServicesRunning`0" priority="0" />
       <Item value="Object`0" priority="0" />
-      <Item value="legalMovesWithEval" priority="0" />
+      <Item value="legalMovesWithEval" priority="1" />
       <Item value="maxEval" priority="4" />
       <Item value="minEval" priority="0" />
       <Item value="Reverse`1" priority="0" />
@@ -846,6 +845,14 @@
       <Item value="AllowFastTurnsWithNoPlayerMoves" priority="1" />
       <Item value="allowFastMovesToolStripMenuItem" priority="0" />
       <Item value="AllowFreeRunningOfTurnsWithNoPlayerMoves" priority="0" />
+      <Item value="ExtraLevelIfNeeded" priority="0" />
+      <Item value="gameStateLine" priority="0" />
+      <Item value="cleanUpBeforeAsserting" priority="0" />
+      <Item value="lastPeriod" priority="0" />
+      <Item value="StringSplitOptions`0" priority="0" />
+      <Item value="previousTurnIndex" priority="4" />
+      <Item value="currentClauses" priority="0" />
+      <Item value="RemoveEmptyEntries" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:GGP.GeneralGame">
       <Item value="LoadAsyncDescription`0" priority="0" />
@@ -896,7 +903,7 @@
       <Item value="Handle`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
-      <Item value="Any`1" priority="11" />
+      <Item value="Any`1" priority="12" />
       <Item value="ToArray`1" priority="2" />
       <Item value="Aggregate`3" priority="0" />
       <Item value="Select`2" priority="5" />
@@ -957,7 +964,7 @@
       <Item value="SaveHornClauses`0" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
-      <Item value="Empty" priority="19" />
+      <Item value="Empty" priority="21" />
       <Item value="Format`0" priority="5" />
       <Item value="Copy`0" priority="2" />
       <Item value="Join`0" priority="2" />
@@ -1000,8 +1007,8 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.String">
       <Item value="ToLower`0" priority="0" />
-      <Item value="Trim`0" priority="1" />
-      <Item value="First`1" priority="0" />
+      <Item value="Trim`0" priority="2" />
+      <Item value="First`1" priority="1" />
       <Item value="StartsWith`0" priority="6" />
       <Item value="EndsWith`0" priority="0" />
       <Item value="Substring`0" priority="5" />
@@ -1010,7 +1017,7 @@
       <Item value="Any`1" priority="2" />
       <Item value="Where`1" priority="0" />
       <Item value="Contains`0" priority="12" />
-      <Item value="Replace`0" priority="3" />
+      <Item value="Replace`0" priority="4" />
       <Item value="ToString`0" priority="2" />
       <Item value="CopyTo`0" priority="0" />
       <Item value="ToCharArray`0" priority="0" />
@@ -1018,6 +1025,9 @@
       <Item value="IndexOf`0" priority="1" />
       <Item value="IndexOfNth`0" priority="0" />
       <Item value="Equals`0" priority="0" />
+      <Item value="Split`0" priority="1" />
+      <Item value="LastIndexOf`0" priority="1" />
+      <Item value="Remove`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:API.Tree.TFTreeNode`1">
       <Item value="Children" priority="2" />
@@ -1047,7 +1057,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:API.GGP.GeneralGameNS.GeneralGame">
       <Item value="InitializeGame`0" priority="0" />
-      <Item value="PrologEngine" priority="5" />
+      <Item value="PrologEngine" priority="12" />
       <Item value="LoadDescriptionFromGameDescriptionString`0" priority="0" />
       <Item value="ApplyMoves`0" priority="1" />
       <Item value="LoadDescriptionFromKIFFile`0" priority="0" />
@@ -1118,7 +1128,7 @@
       <Item value="Solved" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Environment">
-      <Item value="NewLine" priority="2" />
+      <Item value="NewLine" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:GeneralGamePlaying.PrologQuery">
       <Item value="Show`0" priority="0" />
@@ -1169,7 +1179,7 @@
       <Item value="NilReplyString" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Text.StringBuilder">
-      <Item value="Append`0" priority="27" />
+      <Item value="Append`0" priority="29" />
       <Item value="Remove`0" priority="3" />
       <Item value="Length" priority="5" />
       <Item value="ToString`0" priority="13" />
@@ -1619,7 +1629,7 @@
     <ItemStatistics item="Qualified:API.GGP.GeneralGameManagerNS.TurnRecord">
       <Item value="Turn" priority="3" />
       <Item value="State" priority="0" />
-      <Item value="GameState" priority="4" />
+      <Item value="GameState" priority="7" />
       <Item value="Moves" priority="4" />
       <Item value="IsInitialState" priority="0" />
       <Item value="IsTerminalState" priority="1" />
@@ -1627,6 +1637,7 @@
     <ItemStatistics item="Qualified:API.GGP.GeneralGameManagerNS.GameState">
       <Item value="GameStateAsXML" priority="3" />
       <Item value="GameStateAsHTML" priority="0" />
+      <Item value="GameStateFromProlog" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@API.UtilitiesAndExtensions.DebugAndTraceHelper">
       <Item value="ManagerChannelId" priority="1" />
@@ -1645,6 +1656,12 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:API.SWIProlog.Engine.PrologEngine">
       <Item value="Consult`0" priority="0" />
+      <Item value="ListAll`0" priority="1" />
+      <Item value="Reset`0" priority="0" />
+      <Item value="Assert`0" priority="2" />
+      <Item value="CleanUpExistingPrologClauseForAsserting`0" priority="0" />
+      <Item value="ExecuteClause`0" priority="0" />
+      <Item value="Retract`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:API.GGP.GGPInterfacesNS.Move">
       <Item value="TheMove" priority="3" />
@@ -1674,9 +1691,13 @@
     <ItemStatistics item="Qualified:@System.Windows.Forms.Clipboard">
       <Item value="SetText`0" priority="0" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.StringSplitOptions">
+      <Item value="RemoveEmptyEntries" priority="0" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <Bookmarks>
-    <Bookmark owner="AnonymousBookmarkManager" id="eae44aa3-0cdf-4a9d-b375-1387321d4599" file-id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" coords="(Doc Ln 129 Col 23)" />
+    <Bookmark owner="AnonymousBookmarkManager" id="eae44aa3-0cdf-4a9d-b375-1387321d4599" file-id="98FDAD14-950F-4F4A-AE7F-7131DB3292E8/f:GeneralGameManager.cs" coords="(Doc Ln 130 Col 23)" />
     <Bookmark owner="AnonymousBookmarkManager" id="4cb8d578-ad9f-4468-8aac-d9a64ab1c80a" file-id="7E127119-B6E4-49D6-8E17-80F9CCD19164/f:Clause.cs" coords="(Doc Ln 466 Col 8)" />
+    <Bookmark owner="AnonymousBookmarkManager" id="f1fa38f6-17a1-443a-8d8c-a9d5fe2c4ea9" file-id="8428CBDD-0A2D-4E4C-9567-E1A684A3522C/f:GeneralGame.cs" coords="(Doc Ln 308 Col 33)" />
   </Bookmarks>
 </Configuration>

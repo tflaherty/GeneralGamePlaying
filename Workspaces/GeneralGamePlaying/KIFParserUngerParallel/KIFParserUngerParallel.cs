@@ -319,33 +319,41 @@ namespace API.Parsing.KIFParserUngerParallel
         {
             using (var sr = new StreamReader(kifFilePath))
             {
-                var st = new StreamTokenizer(sr) { EOLIsSignificant = true };
-                Token nextToken = null;
-                int parenCount;
-
-                while ((nextToken = st.NextToken()).TheTokenType != TokenType.EndOfFile)
+                try
                 {
-                    var input = new List<Token>();
-                    parenCount = 0;
+                    var st = new StreamTokenizer(sr) { EOLIsSignificant = true };
+                    Token nextToken = null;
+                    int parenCount;
 
-                    while (nextToken.TheTokenType != TokenType.EndOfFile)
+                    while ((nextToken = st.NextToken()).TheTokenType != TokenType.EndOfFile)
                     {
-                        input.Add(nextToken);
+                        var input = new List<Token>();
+                        parenCount = 0;
 
-                        if (nextToken.TheTokenType == TokenType.LeftParen)
+                        while (nextToken.TheTokenType != TokenType.EndOfFile)
                         {
-                            parenCount++;
-                        }
-                        else if (nextToken.TheTokenType == TokenType.RightParen)
-                        {
-                            if (--parenCount == 0) goto EndOfSentence;
-                        }
+                            input.Add(nextToken);
 
-                        nextToken = st.NextToken();
-                    }
+                            if (nextToken.TheTokenType == TokenType.LeftParen)
+                            {
+                                parenCount++;
+                            }
+                            else if (nextToken.TheTokenType == TokenType.RightParen)
+                            {
+                                if (--parenCount == 0) goto EndOfSentence;
+                            }
+
+                            nextToken = st.NextToken();
+                        }
 
                     EndOfSentence:
-                    sentences.Add(input);
+                        sentences.Add(input);
+                    }
+
+                }
+                catch (Exception ex)
+                {                    
+                    throw;
                 }
             }
 
