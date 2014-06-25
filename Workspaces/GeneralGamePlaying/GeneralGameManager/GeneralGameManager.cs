@@ -60,7 +60,7 @@ namespace API.GGP.GeneralGameManagerNS
 
             AllMoves = new List<Move>();
 
-            MilliSecondsBetweenFreeRunningMoves = 500;
+            MilliSecondsBetweenFreeRunningMoves = 0;
             AllowFreeRunningOfTurnsWithNoPlayerMoves = true;
 
             TheGeneralGame = new GeneralGame(wcfSvcHostExePath) { TempFilePath = tempFilePath };
@@ -187,7 +187,7 @@ namespace API.GGP.GeneralGameManagerNS
                 }
                 else
                 {
-                    if (MilliSecondsBetweenFreeRunningMoves >= 0)
+                    if (MilliSecondsBetweenFreeRunningMoves > 0)
                     {
                         Thread.Sleep(MilliSecondsBetweenFreeRunningMoves);
                     }

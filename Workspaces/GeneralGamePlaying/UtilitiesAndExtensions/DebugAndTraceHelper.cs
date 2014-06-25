@@ -452,7 +452,14 @@ namespace API.UtilitiesAndExtensions
 
         protected virtual void RunOnUiThread(Delegate method)
         {
-            textBox.Invoke(method);
+            if (textBox.InvokeRequired)
+            {
+                textBox.Invoke(method);                
+            }
+            else
+            {
+                method();
+            }
         }
 
         public override void Write(string message)

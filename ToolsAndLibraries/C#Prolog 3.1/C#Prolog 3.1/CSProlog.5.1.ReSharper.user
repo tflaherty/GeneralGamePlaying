@@ -19,13 +19,13 @@
       <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:PredStorage.cs" caret="1033" fromTop="0" />
       <File id="BB06ADF9-92C3-4F92-8397-5ACC92208528/d:Properties/f:Resources.Designer.cs" caret="2319" fromTop="48" />
       <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="29825" fromTop="36" />
-      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Engine.cs" caret="917" fromTop="19" />
       <File id="BB06ADF9-92C3-4F92-8397-5ACC92208528/f:Program.cs" caret="235" fromTop="11" />
       <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/d:PG/f:PL.cs" caret="283" fromTop="11" />
       <File id="BB06ADF9-92C3-4F92-8397-5ACC92208528/f:MainForm.cs" caret="7356" fromTop="24" />
       <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/d:PG/f:Parser.tpl" caret="576" fromTop="21" />
-      <File id="B7438FBF-6E46-4065-A60B-1B1CA2AC9875/f:Main.cs" caret="861" fromTop="13" />
-      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:BaseTerm.cs" caret="6334" fromTop="24" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:BaseTerm.cs" caret="21910" fromTop="35" />
+      <File id="B7438FBF-6E46-4065-A60B-1B1CA2AC9875/f:Main.cs" caret="998" fromTop="13" />
+      <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Engine.cs" caret="19208" fromTop="26" />
     </RecentFiles>
     <RecentEdits>
       <File id="721E06EF-2BE2-44BF-A0B7-BBE163A29F26/f:Miscellaneous.cs" caret="1114" fromTop="18" />
