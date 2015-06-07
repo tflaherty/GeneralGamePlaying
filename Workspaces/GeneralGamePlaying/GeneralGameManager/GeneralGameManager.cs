@@ -18,6 +18,12 @@ using API.SWIProlog.Engine;
 using API.UtilitiesAndExtensions;
 using API.UtilitiesAndExtensions;
 
+/*
+ * Links for REST via WCF
+ *      http://www.codeproject.com/Articles/105273/Create-RESTful-WCF-Service-API-Step-By-Step-Guide 
+ *      http://www.codeproject.com/Tips/376232/Integrating-REST-Into-an-Existing-Csharp-Applicati
+ *      http://www.codeproject.com/Articles/201901/CREATE-RESTful-WCF-Service-API-Using-POST-Step-By
+ */
 
 namespace API.GGP.GeneralGameManagerNS
 {

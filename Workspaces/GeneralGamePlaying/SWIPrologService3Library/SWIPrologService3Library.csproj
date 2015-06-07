@@ -43,7 +43,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="SwiPlCs">
+    <Reference Include="SwiPlCs, Version=1.1.60301.0, Culture=neutral, PublicKeyToken=03ea137181587c56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Assemblies\SwiPlCs.dll</HintPath>
     </Reference>
     <Reference Include="System" />
